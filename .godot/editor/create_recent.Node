@@ -1,3 +1,9 @@
+TextureRect
+TextureButton
+Button
+VBoxContainer
+MarginContainer
+MenuButton
 TileMap
 AnimationTree
 AnimationPlayer

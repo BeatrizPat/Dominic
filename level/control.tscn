@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://dn0fip6a3shw5"]
+
+[ext_resource type="Script" path="res://level/control.gd" id="1_kldcw"]
+[ext_resource type="Texture2D" uid="uid://c6y0mq5ks2ggf" path="res://assets/buttons/botao.png" id="2_5uly1"]
+[ext_resource type="Texture2D" uid="uid://leb1237dxy38" path="res://assets/background.png" id="2_xq3ff"]
+[ext_resource type="Texture2D" uid="uid://dfm03ax0sdxgr" path="res://assets/buttons/botao_hover.png" id="3_h2hfo"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kldcw")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 700.0
+offset_bottom = 710.0
+texture = ExtResource("2_xq3ff")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 2
+offset_left = 111.0
+offset_top = 186.0
+offset_right = 166.0
+offset_bottom = 213.0
+texture_normal = ExtResource("2_5uly1")
+texture_hover = ExtResource("3_h2hfo")
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

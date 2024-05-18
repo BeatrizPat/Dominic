@@ -1,7 +1,18 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1715700013
+::res://::1715973664
 icon.svg::CompressedTexture2D::6220877556002403106::1715180361::1715180372::1::::<><>::
-::res://assets/::1715181583
+Play.gd::GDScript::-1::1715972093::0::1::::<>Button<>::
+Control.gd::GDScript::-1::1715973664::0::1::::<>Control<>::
+Default theme.tres::Theme::1628935620730373637::1715973664::0::1::::<><>::
+::res://assets/::1715992254
+background.png::CompressedTexture2D::780443401512741921::1715992252::1715992254::1::::<><>::
+::res://assets/buttons/::1715981169
+botao.png::CompressedTexture2D::6999780827805872417::1715981049::1715981073::1::::<><>::
+botao_hover.png::CompressedTexture2D::7536546766057267025::1715981120::1715981122::1::::<><>::
+ClickIcon.png::CompressedTexture2D::1134901604248779745::1715976629::1715976658::1::::<><>::
+PlayBtn.png::CompressedTexture2D::1864986107759978501::1715976629::1715976658::1::::<><>::
+PlayClick.png::CompressedTexture2D::7870396314319330628::1715976629::1715976658::1::::<><>::
+PlayIconClick.png::CompressedTexture2D::997061080617800693::1715976629::1715976658::1::::<><>::
 ::res://assets/dog/::1715700889
 cachorro-sheet-finalizado.png::CompressedTexture2D::1914774618134217276::1715699951::1715700889::1::::<><>::
 ::res://assets/Sprout Lands - Sprites - Basic pack/::1715180763
@@ -122,8 +133,10 @@ TX Tileset Wall.png::CompressedTexture2D::4662741967452042797::1611405179::17151
 ::res://assets/Tiny Swords (Update 010)/UI/Icons/::1715180773
 ._Pressed_07.png::::-1::0::0::0::::<><>::
 ._Regular_07.png::::-1::0::0::0::::<><>::
-::res://characters/::1715700893
-dog_player.gd::GDScript::-1::1715193365::0::1::::<>CharacterBody2D<>::
-dog_player.tscn::PackedScene::2214286011434126884::1715700893::0::1::::<><>::res://characters/dog_player.gd<>uid://b0smwg2lsf7bm::::res://assets/dog/cachorro-sentado-sheet-finalizado.png
-::res://level/::1715700893
-game_level.tscn::PackedScene::823007552526679243::1715700893::0::1::::<><>::uid://6su7471wdxtk::::res://characters/dog_player.tscn<>uid://d7bohyfu6t7q::::res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/Grass.png<>uid://de3flxd85q23a::::res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/Water.png
+::res://characters/::1715992321
+dog_player.gd::GDScript::-1::1715992321::0::1::::<>CharacterBody2D<>::
+dog_player.tscn::PackedScene::2214286011434126884::1715992321::0::1::::<><>::res://characters/dog_player.gd<>uid://b0smwg2lsf7bm::::res://assets/dog/cachorro-sentado-sheet-finalizado.png
+::res://level/::1715992321
+game_level.tscn::PackedScene::823007552526679243::1715992321::0::1::::<><>::uid://6su7471wdxtk::::res://characters/dog_player.tscn<>uid://d7bohyfu6t7q::::res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/Grass.png<>uid://de3flxd85q23a::::res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/Water.png
+control.tscn::PackedScene::8123645169317612854::1715992321::0::1::::<><>::res://level/control.gd<>uid://c6y0mq5ks2ggf::::res://assets/buttons/botao.png<>uid://leb1237dxy38::::res://assets/background.png<>uid://dfm03ax0sdxgr::::res://assets/buttons/botao_hover.png
+control.gd::GDScript::-1::1715975856::0::1::::<>Control<>::

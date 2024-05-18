@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Dom"
-run/main_scene="res://level/game_level.tscn"
+run/main_scene="res://level/control.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
 config/icon="res://icon.svg"
 
