@@ -13,6 +13,17 @@ func _physics_process(_delta):
 		Input.get_action_strength("right") - Input.get_action_strength("left"),
 		Input.get_action_strength("down") - Input.get_action_strength("up")
 	)
+	#bloqueia movimento diagonal
+	if Input.is_action_pressed("right") || Input.is_action_pressed("left"):
+		input_direction.y = 0
+	elif Input.is_action_pressed("up") || Input.is_action_pressed("down"):
+		input_direction.x = 0
+	else:
+		input_direction = Vector2.ZERO
+	
+	#normaliza movimento
+	input_direction = input_direction.normalized()
+	#atualiza animação
 	update_animation_parameters(input_direction)
 	velocity = input_direction * move_speed
 	move_and_slide()
@@ -27,3 +38,5 @@ func pick_new_state():
 		state_machine.travel("walk")
 	else:
 		state_machine.travel("idle")
+		
+

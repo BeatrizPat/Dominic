@@ -1,8 +1,4 @@
-res://Control.gd
 res://level/game_level.tscn
 res://characters/dog_player.tscn
 res://level/control.tscn
-res://Play.gd
-res://Default theme.tres
-res://level/control.gd
 res://characters/dog_player.gd
