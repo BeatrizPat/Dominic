@@ -1,7 +1,7 @@
 [gd_scene load_steps=28 format=3 uid="uid://6su7471wdxtk"]
 
 [ext_resource type="Script" path="res://characters/dog_player.gd" id="1_nr1kn"]
-[ext_resource type="Texture2D" uid="uid://b0smwg2lsf7bm" path="res://assets/dog/cachorro-sentado-sheet-finalizado.png" id="2_wuo5t"]
+[ext_resource type="Texture2D" uid="uid://2jsb8j3ik4bw" path="res://assets/dog/cachorro-sheet-finalizado.png" id="2_wuo5t"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qyc3e"]
 size = Vector2(15, 9)
