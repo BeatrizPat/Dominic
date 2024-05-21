@@ -3,8 +3,8 @@
 [ext_resource type="Script" path="res://characters/dog_player.gd" id="1_nr1kn"]
 [ext_resource type="Texture2D" uid="uid://2jsb8j3ik4bw" path="res://assets/dog/cachorro-sheet-finalizado.png" id="2_wuo5t"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_qyc3e"]
-size = Vector2(15, 9)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uebv3"]
+size = Vector2(17.9447, 15)
 
 [sub_resource type="Animation" id="Animation_uuptj"]
 length = 0.001
@@ -238,12 +238,9 @@ transitions = ["idle", "walk", SubResource("AnimationNodeStateMachineTransition_
 
 [node name="DogPlayer" type="CharacterBody2D"]
 script = ExtResource("1_nr1kn")
-move_speed = null
-starting_direction = null
-tile_size = null
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-5.25, -4.25)
+position = Vector2(0, -3)
 scale = Vector2(0.0424188, 0.0424188)
 texture = ExtResource("2_wuo5t")
 hframes = 4
@@ -251,8 +248,9 @@ vframes = 4
 frame = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-3.5, 1.5)
-shape = SubResource("RectangleShape2D_qyc3e")
+position = Vector2(0, 3)
+scale = Vector2(0.778738, 0.602081)
+shape = SubResource("RectangleShape2D_uebv3")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -264,3 +262,8 @@ tree_root = SubResource("AnimationNodeStateMachine_46la2")
 anim_player = NodePath("../AnimationPlayer")
 parameters/idle/blend_position = Vector2(0, 0.0158274)
 parameters/walk/blend_position = Vector2(0, 0)
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+scale = Vector2(1.18912, 0.656632)
+target_position = Vector2(2.40458e-07, 8.90485)
+collide_with_areas = true

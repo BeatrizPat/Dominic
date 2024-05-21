@@ -1,3 +1,4 @@
-res://characters/dog_player.tscn
-res://level/control.tscn
 res://level/game_level.tscn
+res://level/control.tscn
+res://characters/dog_player.tscn
+res://characters/dog_player.gd

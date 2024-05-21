@@ -6,29 +6,40 @@ extends CharacterBody2D
 
 @onready var animation_tree = $AnimationTree
 @onready var state_machine = animation_tree.get("parameters/playback")
-var currPos = [100, 50]
+var currPos = Vector2(56,32)
+var inputs = {"right": Vector2.RIGHT,
+			"left": Vector2.LEFT,
+			"up": Vector2.UP,
+			"down": Vector2.DOWN}
+var moving = false
+var animation_speed = 2
+@onready var ray = $RayCast2D
+
 func _ready():
 	update_animation_parameters(starting_direction)
-func _input(event):
-	if event.is_action_pressed("right"):
-		currPos[0] += tile_size
-
-	elif event.is_action_pressed("left"):
-		currPos[0] -= tile_size
-		
-	elif event.is_action_pressed("up"):
-		currPos[1] -= tile_size
-
-	elif event.is_action_pressed("down"):
-		currPos[1] += tile_size
-
-	self.position = Vector2(currPos[0], currPos[1])
+	position = position.snapped(Vector2.ONE * tile_size)
+	position += Vector2.ONE * tile_size/2
+func _process(delta):
+	print(ray.is_colliding())
 	
-func _physics_process(_delta):
-	#atualiza animação
-	update_animation_parameters(Vector2(currPos[0], currPos[1]))
-	velocity = Vector2(currPos[0], currPos[1]) * move_speed
-	#move_and_slide()
+func _unhandled_input(event):
+	if moving:
+		return
+	for dir in inputs.keys():
+		if event.is_action(dir):
+			move(dir)
+
+func move(dir):
+	ray.target_position = inputs[dir] * tile_size
+	ray.force_raycast_update()
+	update_animation_parameters(ray.target_position)
+	if !ray.is_colliding():
+		var tween = create_tween()
+		tween.tween_property(self, "position", position + inputs[dir] * tile_size, 1.0/animation_speed).set_trans(Tween.TRANS_LINEAR)
+		moving = true
+		pick_new_state()
+		await tween.finished
+		moving = false
 	pick_new_state()
 	
 func update_animation_parameters(move_input: Vector2):
@@ -37,7 +48,7 @@ func update_animation_parameters(move_input: Vector2):
 		animation_tree.set("parameters/walk/blend_position", move_input)
 		
 func pick_new_state():
-	if(velocity != Vector2.ZERO):
+	if(moving):
 		state_machine.travel("walk")
 	else:
 		state_machine.travel("idle")
