@@ -1,93 +1,94 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1716214223
-Control.gd::GDScript::-1::1715973664::0::1::::<>Control<>::
-Default theme.tres::Theme::1628935620730373637::1715973664::0::1::::<><>::
+::res://::1716299956
+Control.gd::GDScript::-1::1716299090::0::1::::<>Control<>::
+Default theme.tres::Theme::1628935620730373637::1716299090::0::1::::<><>::
 icon.svg::CompressedTexture2D::6220877556002403106::1715180361::1715180372::1::::<><>::
-Play.gd::GDScript::-1::1715972093::0::1::::<>Button<>::
-::res://assets/::1716212710
-background.png::CompressedTexture2D::780443401512741921::1715992252::1715992254::1::::<><>::
-::res://assets/buttons/::1715981169
-botao.png::CompressedTexture2D::6999780827805872417::1715981049::1715981073::1::::<><>::
-botao_hover.png::CompressedTexture2D::7536546766057267025::1715981120::1715981122::1::::<><>::
+Play.gd::GDScript::-1::1716299090::0::1::::<>Button<>::
+::res://assets/::1716299236
+background.png::CompressedTexture2D::780443401512741921::1716299090::1716299090::1::::<><>::
+::res://assets/buttons/::1716300403
+botao.png::CompressedTexture2D::6999780827805872417::1716299090::1716299090::1::::<><>::
+botao_hover.png::CompressedTexture2D::7536546766057267025::1716299090::1716299090::1::::<><>::
 ClickIcon.png::CompressedTexture2D::1134901604248779745::1715976629::1715976658::1::::<><>::
 PlayBtn.png::CompressedTexture2D::1864986107759978501::1715976629::1715976658::1::::<><>::
 PlayClick.png::CompressedTexture2D::7870396314319330628::1715976629::1715976658::1::::<><>::
 PlayIconClick.png::CompressedTexture2D::997061080617800693::1715976629::1715976658::1::::<><>::
-::res://assets/dog/::1715700889
-cachorro-sheet-finalizado.png::CompressedTexture2D::1914774618134217276::1715699951::1715700889::1::::<><>::
-::res://assets/Sprout Lands - Sprites - Basic pack/::1715180763
-read_me.txt::TextFile::-1::1657826714::0::1::::<><>::
-::res://assets/Sprout Lands - Sprites - Basic pack/Characters/::1715180958
-Basic Charakter Actions.png::CompressedTexture2D::3506624533553679642::1647014340::1715180958::1::::<><>::
-Basic Charakter Spritesheet.png::CompressedTexture2D::4188931512324163195::1644657182::1715180958::1::::<><>::
-Egg_And_Nest.png::CompressedTexture2D::1548223217830228705::1688788916::1715180958::1::::<><>::
-Free Chicken Sprites.png::CompressedTexture2D::3465736325131419660::1686897918::1715180958::1::::<><>::
-Free Cow Sprites.png::CompressedTexture2D::7724739745037901427::1642839210::1715180958::1::::<><>::
-Tools.png::CompressedTexture2D::5558537411581323699::1647014562::1715180958::1::::<><>::
-::res://assets/Sprout Lands - Sprites - Basic pack/Objects/::1715180958
-Basic_Furniture.png::CompressedTexture2D::548711550191143110::1640169206::1715180958::1::::<><>::
-Basic_Grass_Biom_things.png::CompressedTexture2D::8723429324013681229::1641381564::1715180958::1::::<><>::
-Basic_Plants.png::CompressedTexture2D::7491989107463853251::1640166844::1715180958::1::::<><>::
-Basic_tools_and_meterials.png::CompressedTexture2D::472850809908006071::1647014888::1715180958::1::::<><>::
-Chest.png::CompressedTexture2D::4286833441877292887::1643111486::1715180958::1::::<><>::
-Egg_item.png::CompressedTexture2D::2428314220933995531::1686898878::1715180958::1::::<><>::
-Free_Chicken_House.png::CompressedTexture2D::7656295443714551009::1688788742::1715180958::1::::<><>::
-Paths.png::CompressedTexture2D::1205477954341805471::1642838364::1715180958::1::::<><>::
-Simple_Milk_and_grass_item.png::CompressedTexture2D::6088997078295925711::1642918686::1715180958::1::::<><>::
-Wood_Bridge.png::CompressedTexture2D::7194145946693339241::1642838430::1715180958::1::::<><>::
-::res://assets/Sprout Lands - Sprites - Basic pack/Sprout Lands color pallet/::1715180958
-Sprout Lands defautlt palette snip.PNG::CompressedTexture2D::8101400178689576210::1689735758::1715180958::1::::<><>::
-Sprout Lands defautlt palette.png::CompressedTexture2D::500774580907377833::1689735686::1715180958::1::::<><>::
-::res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/::1715266651
-Fences.png::CompressedTexture2D::1508490735032771328::1640168132::1715180958::1::::<><>::
-Grass.png::CompressedTexture2D::276712742145347316::1702920052::1715180958::1::::<><>::
-Hills.png::CompressedTexture2D::2317599641169086943::1702919662::1715180958::1::::<><>::
-Tilled_Dirt.png::CompressedTexture2D::5899247907000325190::1714517408::1715180958::1::::<><>::
-Water.png::CompressedTexture2D::7498144445653479268::1640167722::1715180958::1::::<><>::
-Wooden House.png::CompressedTexture2D::1355266606749691082::1640169246::1715180958::1::::<><>::
-::res://assets/Texture/::1715180958
-TX Plant.png::CompressedTexture2D::3086854795477582587::1611037133::1715180958::1::::<><>::
-TX Player.png::CompressedTexture2D::6558592809420027290::1611145297::1715180958::1::::<><>::
-TX Props.png::CompressedTexture2D::4965324606742917992::1611405727::1715180958::1::::<><>::
-TX Shadow Plant.png::CompressedTexture2D::4719188938255410811::1610157980::1715180958::1::::<><>::
-TX Shadow.png::CompressedTexture2D::1431290483576818961::1611391753::1715180958::1::::<><>::
-TX Struct.png::CompressedTexture2D::8507621983835087513::1611392449::1715180958::1::::<><>::
-TX Tileset Grass.png::CompressedTexture2D::3610002456714304836::1608879222::1715180958::1::::<><>::
-TX Tileset Stone Ground.png::CompressedTexture2D::7082318864146959016::1605362648::1715180958::1::::<><>::
-TX Tileset Wall.png::CompressedTexture2D::4662741967452042797::1611405179::1715180958::1::::<><>::
-::res://assets/Tiny Swords (Update 010)/::1715180773
-::res://assets/Tiny Swords (Update 010)/Effects/::1715180772
-::res://assets/Tiny Swords (Update 010)/Effects/Explosion/::1715180772
-::res://assets/Tiny Swords (Update 010)/Effects/Fire/::1715180772
-::res://assets/Tiny Swords (Update 010)/Factions/::1715180773
-::res://assets/Tiny Swords (Update 010)/Factions/Goblins/::1715180772
-::res://assets/Tiny Swords (Update 010)/Factions/Goblins/Buildings/::1715180772
-::res://assets/Tiny Swords (Update 010)/Factions/Goblins/Buildings/Wood_House/::1715180772
-::res://assets/Tiny Swords (Update 010)/Factions/Goblins/Buildings/Wood_Tower/::1715180772
-::res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/::1715180772
-::res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/Barrel/::1715180772
-::res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/Barrel/Blue/::1715180772
-::res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/Barrel/Purple/::1715180772
-::res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/Barrel/Red/::1715180772
-::res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/TNT/::1715180772
-::res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/TNT/Blue/::1715180772
-::res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/TNT/Purple/::1715180772
-::res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/TNT/Red/::1715180772
-::res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/Torch/::1715180773
-::res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/Torch/Blue/::1715180773
-::res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/Torch/Purple/::1715180773
-::res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/Torch/Red/::1715180773
+::res://assets/dog/::1716299365
+cachorro-sheet-finalizado.png::CompressedTexture2D::1914774618134217276::1716299064::1716299064::1::::<><>::
+::res://assets/Sprout Lands - Sprites - Basic pack/::1716299365
+read_me.txt::TextFile::-1::1716299365::0::1::::<><>::
+::res://assets/Sprout Lands - Sprites - Basic pack/Characters/::1716299236
+Basic Charakter Actions.png::CompressedTexture2D::3506624533553679642::1716299236::1716299236::1::::<><>::
+Basic Charakter Spritesheet.png::CompressedTexture2D::4188931512324163195::1716299236::1716299236::1::::<><>::
+Egg_And_Nest.png::CompressedTexture2D::1548223217830228705::1716299236::1716299236::1::::<><>::
+Free Chicken Sprites.png::CompressedTexture2D::3465736325131419660::1716299236::1716299236::1::::<><>::
+Free Cow Sprites.png::CompressedTexture2D::7724739745037901427::1716299236::1716299236::1::::<><>::
+Tools.png::CompressedTexture2D::5558537411581323699::1716299236::1716299236::1::::<><>::
+::res://assets/Sprout Lands - Sprites - Basic pack/Objects/::1716299236
+Basic_Furniture.png::CompressedTexture2D::548711550191143110::1716299236::1716299236::1::::<><>::
+Basic_Grass_Biom_things.png::CompressedTexture2D::8723429324013681229::1716299236::1716299236::1::::<><>::
+Basic_Plants.png::CompressedTexture2D::7491989107463853251::1716299236::1716299236::1::::<><>::
+Basic_tools_and_meterials.png::CompressedTexture2D::472850809908006071::1716299236::1716299236::1::::<><>::
+Chest.png::CompressedTexture2D::4286833441877292887::1716299236::1716299236::1::::<><>::
+Egg_item.png::CompressedTexture2D::2428314220933995531::1716299236::1716299236::1::::<><>::
+Free_Chicken_House.png::CompressedTexture2D::7656295443714551009::1716299236::1716299236::1::::<><>::
+Paths.png::CompressedTexture2D::1205477954341805471::1716299236::1716299236::1::::<><>::
+Simple_Milk_and_grass_item.png::CompressedTexture2D::6088997078295925711::1716299236::1716299236::1::::<><>::
+Wood_Bridge.png::CompressedTexture2D::7194145946693339241::1716299236::1716299236::1::::<><>::
+::res://assets/Sprout Lands - Sprites - Basic pack/Sprout Lands color pallet/::1716299236
+Sprout Lands defautlt palette snip.PNG::CompressedTexture2D::8101400178689576210::1716299236::1716299236::1::::<><>::
+Sprout Lands defautlt palette.png::CompressedTexture2D::500774580907377833::1716299236::1716299236::1::::<><>::
+::res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/::1716299365
+Fences.png::CompressedTexture2D::1508490735032771328::1716299236::1716299236::1::::<><>::
+Grass.png::CompressedTexture2D::276712742145347316::1716299236::1716299236::1::::<><>::
+Hills.png::CompressedTexture2D::2317599641169086943::1716299236::1716299236::1::::<><>::
+Tilled_Dirt.png::CompressedTexture2D::5899247907000325190::1716299236::1716299236::1::::<><>::
+Water.png::CompressedTexture2D::7498144445653479268::1716299236::1716299236::1::::<><>::
+Wooden House.png::CompressedTexture2D::1355266606749691082::1716299236::1716299236::1::::<><>::
+::res://assets/Texture/::1716299236
+TX Plant.png::CompressedTexture2D::3086854795477582587::1716299236::1716299236::1::::<><>::
+TX Player.png::CompressedTexture2D::6558592809420027290::1716299236::1716299236::1::::<><>::
+TX Props.png::CompressedTexture2D::4965324606742917992::1716299236::1716299236::1::::<><>::
+TX Shadow Plant.png::CompressedTexture2D::4719188938255410811::1716299236::1716299236::1::::<><>::
+TX Shadow.png::CompressedTexture2D::1431290483576818961::1716299236::1716299236::1::::<><>::
+TX Struct.png::CompressedTexture2D::8507621983835087513::1716299236::1716299236::1::::<><>::
+TX Tileset Grass.png::CompressedTexture2D::3610002456714304836::1716299236::1716299236::1::::<><>::
+TX Tileset Stone Ground.png::CompressedTexture2D::7082318864146959016::1716299236::1716299236::1::::<><>::
+TX Tileset Wall.png::CompressedTexture2D::4662741967452042797::1716299236::1716299236::1::::<><>::
+::res://assets/tiles/::0
+::res://assets/Tiny Swords (Update 010)/::1716299237
+::res://assets/Tiny Swords (Update 010)/Effects/::1716299237
+::res://assets/Tiny Swords (Update 010)/Effects/Explosion/::1716299236
+::res://assets/Tiny Swords (Update 010)/Effects/Fire/::1716299237
+::res://assets/Tiny Swords (Update 010)/Factions/::1716299237
+::res://assets/Tiny Swords (Update 010)/Factions/Goblins/::1716299237
+::res://assets/Tiny Swords (Update 010)/Factions/Goblins/Buildings/::1716299237
+::res://assets/Tiny Swords (Update 010)/Factions/Goblins/Buildings/Wood_House/::1716299237
+::res://assets/Tiny Swords (Update 010)/Factions/Goblins/Buildings/Wood_Tower/::1716299237
+::res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/::1716299237
+::res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/Barrel/::1716299237
+::res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/Barrel/Blue/::1716299237
+::res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/Barrel/Purple/::1716299237
+::res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/Barrel/Red/::1716299237
+::res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/TNT/::1716299237
+::res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/TNT/Blue/::1716299237
+::res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/TNT/Purple/::1716299237
+::res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/TNT/Red/::1716299237
+::res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/Torch/::1716299237
+::res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/Torch/Blue/::1716299237
+::res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/Torch/Purple/::1716299237
+::res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/Torch/Red/::1716299237
 ._Torch_Red.png::::-1::0::0::0::::<><>::
-::res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/Torch/Yellow/::1715180773
-::res://assets/Tiny Swords (Update 010)/Factions/Knights/::1715180773
-::res://assets/Tiny Swords (Update 010)/Factions/Knights/Buildings/::1715180773
-::res://assets/Tiny Swords (Update 010)/Factions/Knights/Buildings/Castle/::1715180773
-::res://assets/Tiny Swords (Update 010)/Factions/Knights/Buildings/House/::1715180773
+::res://assets/Tiny Swords (Update 010)/Factions/Goblins/Troops/Torch/Yellow/::1716299237
+::res://assets/Tiny Swords (Update 010)/Factions/Knights/::1716299237
+::res://assets/Tiny Swords (Update 010)/Factions/Knights/Buildings/::1716299237
+::res://assets/Tiny Swords (Update 010)/Factions/Knights/Buildings/Castle/::1716299237
+::res://assets/Tiny Swords (Update 010)/Factions/Knights/Buildings/House/::1716299237
 ._House_Destroyed.png::::-1::0::0::0::::<><>::
-::res://assets/Tiny Swords (Update 010)/Factions/Knights/Buildings/Tower/::1715180773
-::res://assets/Tiny Swords (Update 010)/Factions/Knights/Troops/::1715180773
-::res://assets/Tiny Swords (Update 010)/Factions/Knights/Troops/Archer/::1715180773
-::res://assets/Tiny Swords (Update 010)/Factions/Knights/Troops/Archer/Archer + Bow/::1715180773
+::res://assets/Tiny Swords (Update 010)/Factions/Knights/Buildings/Tower/::1716299237
+::res://assets/Tiny Swords (Update 010)/Factions/Knights/Troops/::1716299237
+::res://assets/Tiny Swords (Update 010)/Factions/Knights/Troops/Archer/::1716299237
+::res://assets/Tiny Swords (Update 010)/Factions/Knights/Troops/Archer/Archer + Bow/::1716299237
 ._Archer_Blue_(NoArms).png::::-1::0::0::0::::<><>::
 ._Archer_Bow_Blue.png::::-1::0::0::0::::<><>::
 ._Archer_Bow_Purple.png::::-1::0::0::0::::<><>::
@@ -96,47 +97,47 @@ TX Tileset Wall.png::CompressedTexture2D::4662741967452042797::1611405179::17151
 ._Archer_Purple_(NoArms).png::::-1::0::0::0::::<><>::
 ._Archer_Red_(NoArms).png::::-1::0::0::0::::<><>::
 ._Archer_Yellow_(NoArms).png::::-1::0::0::0::::<><>::
-::res://assets/Tiny Swords (Update 010)/Factions/Knights/Troops/Archer/Arrow/::1715180773
-::res://assets/Tiny Swords (Update 010)/Factions/Knights/Troops/Archer/Blue/::1715180773
-::res://assets/Tiny Swords (Update 010)/Factions/Knights/Troops/Archer/Purple/::1715180773
-::res://assets/Tiny Swords (Update 010)/Factions/Knights/Troops/Archer/Red/::1715180773
-::res://assets/Tiny Swords (Update 010)/Factions/Knights/Troops/Archer/Yellow/::1715180773
-::res://assets/Tiny Swords (Update 010)/Factions/Knights/Troops/Dead/::1715180773
-::res://assets/Tiny Swords (Update 010)/Factions/Knights/Troops/Pawn/::1715180773
-::res://assets/Tiny Swords (Update 010)/Factions/Knights/Troops/Pawn/Blue/::1715180773
+::res://assets/Tiny Swords (Update 010)/Factions/Knights/Troops/Archer/Arrow/::1716299237
+::res://assets/Tiny Swords (Update 010)/Factions/Knights/Troops/Archer/Blue/::1716299237
+::res://assets/Tiny Swords (Update 010)/Factions/Knights/Troops/Archer/Purple/::1716299237
+::res://assets/Tiny Swords (Update 010)/Factions/Knights/Troops/Archer/Red/::1716299237
+::res://assets/Tiny Swords (Update 010)/Factions/Knights/Troops/Archer/Yellow/::1716299237
+::res://assets/Tiny Swords (Update 010)/Factions/Knights/Troops/Dead/::1716299237
+::res://assets/Tiny Swords (Update 010)/Factions/Knights/Troops/Pawn/::1716299237
+::res://assets/Tiny Swords (Update 010)/Factions/Knights/Troops/Pawn/Blue/::1716299237
 ._Pawn_Blue.png::::-1::0::0::0::::<><>::
-::res://assets/Tiny Swords (Update 010)/Factions/Knights/Troops/Pawn/Purple/::1715180773
-::res://assets/Tiny Swords (Update 010)/Factions/Knights/Troops/Pawn/Red/::1715180773
+::res://assets/Tiny Swords (Update 010)/Factions/Knights/Troops/Pawn/Purple/::1716299237
+::res://assets/Tiny Swords (Update 010)/Factions/Knights/Troops/Pawn/Red/::1716299237
 ._Pawn_Red.png::::-1::0::0::0::::<><>::
-::res://assets/Tiny Swords (Update 010)/Factions/Knights/Troops/Pawn/Yellow/::1715180773
-::res://assets/Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/::1715180773
-::res://assets/Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Blue/::1715180773
+::res://assets/Tiny Swords (Update 010)/Factions/Knights/Troops/Pawn/Yellow/::1716299237
+::res://assets/Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/::1716299237
+::res://assets/Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Blue/::1716299237
 ._Warrior_Blue.png::::-1::0::0::0::::<><>::
-::res://assets/Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Purple/::1715180773
-::res://assets/Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Red/::1715180773
-::res://assets/Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Yellow/::1715180773
-::res://assets/Tiny Swords (Update 010)/Resources/::1715180773
-::res://assets/Tiny Swords (Update 010)/Resources/Gold Mine/::1715180773
-::res://assets/Tiny Swords (Update 010)/Resources/Resources/::1715180773
+::res://assets/Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Purple/::1716299237
+::res://assets/Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Red/::1716299237
+::res://assets/Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Yellow/::1716299237
+::res://assets/Tiny Swords (Update 010)/Resources/::1716299237
+::res://assets/Tiny Swords (Update 010)/Resources/Gold Mine/::1716299237
+::res://assets/Tiny Swords (Update 010)/Resources/Resources/::1716299237
 ._W_Idle_(NoShadow).png::::-1::0::0::0::::<><>::
-::res://assets/Tiny Swords (Update 010)/Resources/Sheep/::1715180773
-::res://assets/Tiny Swords (Update 010)/Resources/Trees/::1715180773
-::res://assets/Tiny Swords (Update 010)/Terrain/::1715180773
-::res://assets/Tiny Swords (Update 010)/Terrain/Bridge/::1715180773
-::res://assets/Tiny Swords (Update 010)/Terrain/Ground/::1715180773
+::res://assets/Tiny Swords (Update 010)/Resources/Sheep/::1716299237
+::res://assets/Tiny Swords (Update 010)/Resources/Trees/::1716299237
+::res://assets/Tiny Swords (Update 010)/Terrain/::1716299237
+::res://assets/Tiny Swords (Update 010)/Terrain/Bridge/::1716299237
+::res://assets/Tiny Swords (Update 010)/Terrain/Ground/::1716299237
 ._Tilemap_Flat.png::::-1::0::0::0::::<><>::
-::res://assets/Tiny Swords (Update 010)/Terrain/Water/::1715180773
-::res://assets/Tiny Swords (Update 010)/Terrain/Water/Foam/::1715180773
-::res://assets/Tiny Swords (Update 010)/Terrain/Water/Rocks/::1715180773
-::res://assets/Tiny Swords (Update 010)/UI/::1715180773
-::res://assets/Tiny Swords (Update 010)/UI/Banners/::1715180773
-::res://assets/Tiny Swords (Update 010)/UI/Icons/::1715180773
+::res://assets/Tiny Swords (Update 010)/Terrain/Water/::1716299237
+::res://assets/Tiny Swords (Update 010)/Terrain/Water/Foam/::1716299237
+::res://assets/Tiny Swords (Update 010)/Terrain/Water/Rocks/::1716299237
+::res://assets/Tiny Swords (Update 010)/UI/::1716299237
+::res://assets/Tiny Swords (Update 010)/UI/Banners/::1716299237
+::res://assets/Tiny Swords (Update 010)/UI/Icons/::1716299237
 ._Pressed_07.png::::-1::0::0::0::::<><>::
 ._Regular_07.png::::-1::0::0::0::::<><>::
-::res://characters/::1716215332
-dog_player.gd::GDScript::-1::1716215332::0::1::::<>CharacterBody2D<>::
-dog_player.tscn::PackedScene::2214286011434126884::1716215332::0::1::::<><>::res://characters/dog_player.gd<>uid://b0smwg2lsf7bm::::res://assets/dog/cachorro-sentado-sheet-finalizado.png
-::res://level/::1716215332
-control.gd::GDScript::-1::1715975856::0::1::::<>Control<>::
-control.tscn::PackedScene::8123645169317612854::1716215332::0::1::::<><>::res://level/control.gd<>uid://c6y0mq5ks2ggf::::res://assets/buttons/botao.png<>uid://leb1237dxy38::::res://assets/background.png<>uid://dfm03ax0sdxgr::::res://assets/buttons/botao_hover.png
-game_level.tscn::PackedScene::823007552526679243::1716215332::0::1::::<><>::uid://6su7471wdxtk::::res://characters/dog_player.tscn<>uid://d7bohyfu6t7q::::res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/Grass.png<>uid://de3flxd85q23a::::res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/Water.png
+::res://characters/::1716300007
+dog_player.gd::GDScript::-1::1716299461::0::1::::<>CharacterBody2D<>::
+dog_player.tscn::PackedScene::2214286011434126884::1716300007::0::1::::<><>::res://characters/dog_player.gd<>uid://b0smwg2lsf7bm::::res://assets/dog/cachorro-sentado-sheet-finalizado.png
+::res://level/::1716300007
+control.gd::GDScript::-1::1716299461::0::1::::<>Control<>::
+control.tscn::PackedScene::8123645169317612854::1716300007::0::1::::<><>::res://level/control.gd<>uid://c6y0mq5ks2ggf::::res://assets/buttons/botao.png<>uid://leb1237dxy38::::res://assets/background.png<>uid://dfm03ax0sdxgr::::res://assets/buttons/botao_hover.png
+game_level.tscn::PackedScene::823007552526679243::1716300007::0::1::::<><>::uid://6su7471wdxtk::::res://characters/dog_player.tscn<>uid://d7bohyfu6t7q::::res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/Grass.png<>uid://de3flxd85q23a::::res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/Water.png

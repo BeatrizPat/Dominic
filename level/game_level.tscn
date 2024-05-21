@@ -1,8 +1,15 @@
-[gd_scene load_steps=7 format=3 uid="uid://lyw2xfihrk8j"]
+[gd_scene load_steps=8 format=3 uid="uid://lyw2xfihrk8j"]
 
 [ext_resource type="PackedScene" uid="uid://6su7471wdxtk" path="res://characters/dog_player.tscn" id="1_s4lu3"]
 [ext_resource type="Texture2D" uid="uid://d7bohyfu6t7q" path="res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/Grass.png" id="2_uyyd5"]
 [ext_resource type="Texture2D" uid="uid://de3flxd85q23a" path="res://assets/Sprout Lands - Sprites - Basic pack/Tilesets/Water.png" id="3_jdih2"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_j3t1u"]
+vertices = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)])
+source_geometry_group_name = &"navigation_polygon_source_group"
+agent_radius = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6i48j"]
 texture = ExtResource("2_uyyd5")
@@ -43,9 +50,14 @@ texture = ExtResource("2_uyyd5")
 0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:1/0/physics_layer_0/angular_velocity = 0.0
 0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 8, -8, -8, -3.18198, -8, -3.27037, 8)
+1:1/next_alternative_id = 2
 1:1/0 = 0
 1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 1:1/0/physics_layer_0/angular_velocity = 0.0
+1:1/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_j3t1u")
+1:1/1 = 1
+1:1/1/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:1/1/physics_layer_0/angular_velocity = 0.0
 2:1/0 = 0
 2:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 2:1/0/physics_layer_0/angular_velocity = 0.0
@@ -249,6 +261,7 @@ texture = ExtResource("3_jdih2")
 
 [sub_resource type="TileSet" id="TileSet_hlxlb"]
 physics_layer_0/collision_layer = 1
+navigation_layer_0/layers = 1
 sources/0 = SubResource("TileSetAtlasSource_6i48j")
 sources/1 = SubResource("TileSetAtlasSource_aplkd")
 

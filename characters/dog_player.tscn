@@ -238,6 +238,9 @@ transitions = ["idle", "walk", SubResource("AnimationNodeStateMachineTransition_
 
 [node name="DogPlayer" type="CharacterBody2D"]
 script = ExtResource("1_nr1kn")
+move_speed = null
+starting_direction = null
+tile_size = null
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-5.25, -4.25)
