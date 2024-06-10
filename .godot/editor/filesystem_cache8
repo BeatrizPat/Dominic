@@ -1,26 +1,33 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1716308594
-Control.gd::GDScript::-1::1716299090::0::1::::<>Control<>::
-Default theme.tres::Theme::1628935620730373637::1716299090::0::1::::<><>::
-icon.svg::CompressedTexture2D::6220877556002403106::1715180361::1715180372::1::::<><>::
-Play.gd::GDScript::-1::1716299090::0::1::::<>Button<>::
-::res://assets/::1716300950
-background.png::CompressedTexture2D::780443401512741921::1716299090::1716299090::1::::<><>::
-::res://assets/buttons/::1716300958
-botao.png::CompressedTexture2D::6999780827805872417::1716299090::1716299090::1::::<><>::
-botao_hover.png::CompressedTexture2D::7536546766057267025::1716299090::1716299090::1::::<><>::
-::res://assets/dog/::1716300965
-cachorro-sheet-finalizado.png::CompressedTexture2D::1914774618134217276::1716299064::1716299064::1::::<><>::
-::res://assets/tilesets/::1716300996
-Grass.png::CompressedTexture2D::276712742145347316::1716299236::1716300995::1::::<><>::
-Hills.png::CompressedTexture2D::2317599641169086943::1716299236::1716300995::1::::<><>::
-TX Plant.png::CompressedTexture2D::3086854795477582587::1716299236::1716300995::1::::<><>::
-TX Props.png::CompressedTexture2D::4965324606742917992::1716299236::1716300995::1::::<><>::
-Water.png::CompressedTexture2D::7498144445653479268::1716299236::1716300995::1::::<><>::
-::res://characters/::1716302370
-dog_player.gd::GDScript::-1::1716302229::0::1::::<>CharacterBody2D<>::
-dog_player.tscn::PackedScene::2214286011434126884::1716302370::0::1::::<><>::res://characters/dog_player.gd<>uid://2jsb8j3ik4bw::::res://assets/dog/cachorro-sheet-finalizado.png
-::res://level/::1716302785
-control.gd::GDScript::-1::1716299461::0::1::::<>Control<>::
-control.tscn::PackedScene::8123645169317612854::1716302370::0::1::::<><>::res://level/control.gd<>uid://c6y0mq5ks2ggf::::res://assets/buttons/botao.png<>uid://leb1237dxy38::::res://assets/background.png<>uid://dfm03ax0sdxgr::::res://assets/buttons/botao_hover.png
-game_level.tscn::PackedScene::823007552526679243::1716302785::0::1::::<><>::uid://6su7471wdxtk::::res://characters/dog_player.tscn<>uid://d7bohyfu6t7q::::res://assets/tilesets/Grass.png<>uid://de3flxd85q23a::::res://assets/tilesets/Water.png
+::res://::1718037441
+Control.gd::GDScript::-1::1717105607::0::1::::<>Control<>::
+Default theme.tres::Theme::1628935620730373637::1717105607::0::1::::<><>::
+icon.svg::CompressedTexture2D::6220877556002403106::1717105607::1717105715::1::::<><>::
+Play.gd::GDScript::-1::1717105607::0::1::::<>Button<>::
+README.md::TextFile::-1::1717105607::0::1::::<><>::
+::res://assets/::1717435455
+background.png::CompressedTexture2D::780443401512741921::1717105607::1717105607::1::::<><>::
+::res://assets/buttons/::1717105607
+botao.png::CompressedTexture2D::6999780827805872417::1717105607::1717105607::1::::<><>::
+botao_hover.png::CompressedTexture2D::7536546766057267025::1717105607::1717105607::1::::<><>::
+::res://assets/dog/::1717105607
+cachorro-sheet-finalizado.png::CompressedTexture2D::1914774618134217276::1717105607::1717105607::1::::<><>::
+::res://assets/enemy/::1717435655
+000.png::CompressedTexture2D::4596554176938480457::1675626020::1717435655::1::::<><>::
+purple ghost.png::CompressedTexture2D::813352426007357036::1713373514::1717435459::1::::<><>::
+::res://assets/tilesets/::1717105607
+Grass.png::CompressedTexture2D::276712742145347316::1717105607::1717105607::1::::<><>::
+Hills.png::CompressedTexture2D::2317599641169086943::1717105607::1717105607::1::::<><>::
+TX Plant.png::CompressedTexture2D::3086854795477582587::1717105607::1717105607::1::::<><>::
+TX Props.png::CompressedTexture2D::4965324606742917992::1717105607::1717105607::1::::<><>::
+Water.png::CompressedTexture2D::7498144445653479268::1717105607::1717105607::1::::<><>::
+::res://characters/::1717675883
+dog_player.gd::GDScript::-1::1717436474::0::1::::<>CharacterBody2D<>::
+dog_player.tscn::PackedScene::2214286011434126884::1717673782::0::1::::<><>::res://characters/dog_player.gd<>uid://2jsb8j3ik4bw::::res://assets/dog/cachorro-sheet-finalizado.png
+enemy.tscn::PackedScene::1835910232797161205::1717675883::0::1::::<><>::uid://b6quttspwvhjt::::res://assets/enemy/000.png<>res://characters/enemy_1.gd
+enemy_1.gd::GDScript::-1::1717675883::0::1::::<>enemy_movement<>::
+enemy_movement.gd::GDScript::-1::1717675883::0::1::::enemy_movement<>CharacterBody2D<>::
+::res://level/::1717673782
+control.gd::GDScript::-1::1717105607::0::1::::<>Control<>::
+control.tscn::PackedScene::8123645169317612854::1717673782::0::1::::<><>::res://level/control.gd<>uid://c6y0mq5ks2ggf::::res://assets/buttons/botao.png<>uid://leb1237dxy38::::res://assets/background.png<>uid://dfm03ax0sdxgr::::res://assets/buttons/botao_hover.png
+game_level.tscn::PackedScene::823007552526679243::1717673782::0::1::::<><>::uid://6su7471wdxtk::::res://characters/dog_player.tscn<>uid://d7bohyfu6t7q::::res://assets/tilesets/Grass.png<>uid://de3flxd85q23a::::res://assets/tilesets/Water.png<>uid://1flf5ls2ugef::::res://characters/enemy.tscn

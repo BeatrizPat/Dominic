@@ -1,4 +1,8 @@
-res://level/game_level.tscn
 res://level/control.tscn
+res://level/game_level.tscn
 res://characters/dog_player.tscn
+res://characters/enemy.tscn
+res://characters/enemy_movement.gd
+res://level/end_scene.tscn
 res://characters/dog_player.gd
+res://characters/enemy_1.gd

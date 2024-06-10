@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://2jsb8j3ik4bw" path="res://assets/dog/cachorro-sheet-finalizado.png" id="2_wuo5t"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uebv3"]
-size = Vector2(17.9447, 15)
+size = Vector2(20.5461, 15.8045)
 
 [sub_resource type="Animation" id="Animation_uuptj"]
 length = 0.001
@@ -238,6 +238,9 @@ transitions = ["idle", "walk", SubResource("AnimationNodeStateMachineTransition_
 
 [node name="DogPlayer" type="CharacterBody2D"]
 script = ExtResource("1_nr1kn")
+move_speed = null
+starting_direction = null
+tile_size = null
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -3)
@@ -248,7 +251,7 @@ vframes = 4
 frame = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 3)
+position = Vector2(3.57628e-07, 3.2422)
 scale = Vector2(0.778738, 0.602081)
 shape = SubResource("RectangleShape2D_uebv3")
 

@@ -18,6 +18,7 @@ script = ExtResource("1_kldcw")
 layout_mode = 0
 offset_right = 700.0
 offset_bottom = 710.0
+scale = Vector2(0.441612, 0.424911)
 texture = ExtResource("2_xq3ff")
 
 [node name="TextureButton" type="TextureButton" parent="."]
