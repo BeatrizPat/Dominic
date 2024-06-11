@@ -1,7 +1,7 @@
-[gd_scene load_steps=28 format=3 uid="uid://6su7471wdxtk"]
+[gd_scene load_steps=32 format=3 uid="uid://6su7471wdxtk"]
 
 [ext_resource type="Script" path="res://characters/dog_player.gd" id="1_nr1kn"]
-[ext_resource type="Texture2D" uid="uid://2jsb8j3ik4bw" path="res://assets/dog/cachorro-sheet-finalizado.png" id="2_wuo5t"]
+[ext_resource type="Texture2D" uid="uid://c8yhkj0dmatxd" path="res://assets/dog/cachorro-sentado-sheet-completo.png" id="2_1pipw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uebv3"]
 size = Vector2(20.5461, 15.8045)
@@ -157,6 +157,36 @@ tracks/0/keys = {
 "values": [6, 7]
 }
 
+[sub_resource type="Animation" id="Animation_s1rp3"]
+resource_name = "over_front"
+length = 2.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 16, 17, 18]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(2.5),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"animation_game_over_finished"
+}]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_sdsrd"]
 _data = {
 "RESET": SubResource("Animation_uuptj"),
@@ -164,6 +194,7 @@ _data = {
 "idle_left": SubResource("Animation_hlsiu"),
 "idle_right": SubResource("Animation_eoch2"),
 "idle_up": SubResource("Animation_nbnch"),
+"over_front": SubResource("Animation_s1rp3"),
 "walk_down": SubResource("Animation_f1vob"),
 "walk_left": SubResource("Animation_u7iqs"),
 "walk_right": SubResource("Animation_bwn1l"),
@@ -195,6 +226,9 @@ min_space = Vector2(-1, -1.1)
 max_space = Vector2(1, 1.1)
 blend_mode = 1
 
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_tmgwm"]
+animation = &"over_front"
+
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_eeolg"]
 animation = &"walk_down"
 
@@ -220,34 +254,43 @@ min_space = Vector2(-1, -1.1)
 max_space = Vector2(1, 1.1)
 blend_mode = 1
 
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_pe6x4"]
-
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_7sb42"]
-
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_2sann"]
 advance_mode = 2
 
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_x6tka"]
+advance_mode = 0
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_rnvvi"]
+advance_mode = 0
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_83k3g"]
+switch_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_dktaf"]
+switch_mode = 2
+advance_mode = 0
+
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_46la2"]
-states/End/position = Vector2(857.333, 82.6667)
+states/End/position = Vector2(688.889, 143.654)
 states/Start/position = Vector2(209.333, 100.512)
 states/idle/node = SubResource("AnimationNodeBlendSpace2D_b5f6a")
 states/idle/position = Vector2(310.667, 101.447)
+states/over_front/node = SubResource("AnimationNodeAnimation_tmgwm")
+states/over_front/position = Vector2(452.111, 241)
 states/walk/node = SubResource("AnimationNodeBlendSpace2D_jd33c")
-states/walk/position = Vector2(450.667, 100.037)
-transitions = ["idle", "walk", SubResource("AnimationNodeStateMachineTransition_pe6x4"), "walk", "idle", SubResource("AnimationNodeStateMachineTransition_7sb42"), "Start", "idle", SubResource("AnimationNodeStateMachineTransition_2sann")]
+states/walk/position = Vector2(453.334, 100.808)
+transitions = ["Start", "idle", SubResource("AnimationNodeStateMachineTransition_2sann"), "idle", "walk", SubResource("AnimationNodeStateMachineTransition_x6tka"), "walk", "idle", SubResource("AnimationNodeStateMachineTransition_rnvvi"), "idle", "over_front", SubResource("AnimationNodeStateMachineTransition_83k3g"), "over_front", "End", SubResource("AnimationNodeStateMachineTransition_dktaf")]
+graph_offset = Vector2(1, 23)
 
 [node name="DogPlayer" type="CharacterBody2D"]
 script = ExtResource("1_nr1kn")
-move_speed = null
-starting_direction = null
-tile_size = null
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -3)
 scale = Vector2(0.0424188, 0.0424188)
-texture = ExtResource("2_wuo5t")
+texture = ExtResource("2_1pipw")
 hframes = 4
-vframes = 4
+vframes = 7
 frame = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -263,7 +306,7 @@ libraries = {
 [node name="AnimationTree" type="AnimationTree" parent="."]
 tree_root = SubResource("AnimationNodeStateMachine_46la2")
 anim_player = NodePath("../AnimationPlayer")
-parameters/idle/blend_position = Vector2(0, 0.0158274)
+parameters/idle/blend_position = Vector2(0, 0)
 parameters/walk/blend_position = Vector2(0, 0)
 
 [node name="RayCast2D" type="RayCast2D" parent="."]

@@ -4,6 +4,7 @@ extends CharacterBody2D
 @export var starting_direction : Vector2 = Vector2(0, 0.1)
 @export var tile_size : int = 16
 @onready var animation_tree = $AnimationTree
+@onready var animation_player = $AnimationPlayer
 @onready var state_machine = animation_tree.get("parameters/playback")
 var currPos = Vector2(56,32)
 var inputs = {"right": Vector2.RIGHT,
@@ -11,17 +12,20 @@ var inputs = {"right": Vector2.RIGHT,
 			"up": Vector2.UP,
 			"down": Vector2.DOWN}
 var moving = false
+var game_over_flag = false
 var animation_speed = 2
 @onready var ray = $RayCast2D
 
 # Inicializa a direção do player e ajusta posição centralizado na tile
 func _ready():
+	animation_tree.active = true
 	update_animation_parameters(starting_direction)
+	state_machine.travel("idle")
 	position = position.snapped(Vector2.ONE * tile_size)
 	position += Vector2.ONE * tile_size/2
 	
 func _process(delta):
-	if not moving: state_machine.travel("idle")
+	if (not moving) and (not game_over_flag): state_machine.travel("idle")
 
 # Recebe os eventos de teclado
 func _unhandled_input(event):
@@ -33,7 +37,6 @@ func _unhandled_input(event):
 		
 # Função de movimentação do player
 func move(dir):
-	
 	ray.target_position = inputs[dir] * tile_size
 	ray.force_raycast_update()
 	update_animation_parameters(ray.target_position)
@@ -48,10 +51,10 @@ func move(dir):
 		var regex = RegEx.new()
 		regex.compile("Enemy")
 		var result = regex.search(ray.get_collider().name)
-		if result: get_tree().change_scene_to_file("res://level/end_scene.tscn")
+		print(ray.get_collider().name)
+		if result: 
+			game_over()
 		
-	
-
 # Atualização de animação
 func update_animation_parameters(move_input: Vector2):
 	if(move_input != Vector2.ZERO):
@@ -59,6 +62,10 @@ func update_animation_parameters(move_input: Vector2):
 		animation_tree.set("parameters/walk/blend_position", move_input)
 		
 func game_over():
+	game_over_flag = true
+	state_machine.travel("over_front")
+	await animation_player.animation_finished
 	
-
+func animation_game_over_finished():
+	get_tree().change_scene_to_file("res://level/end_scene.tscn")
 		
