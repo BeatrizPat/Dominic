@@ -29,7 +29,7 @@ func _process(delta):
 
 # Recebe os eventos de teclado
 func _unhandled_input(event):
-	if moving:
+	if moving or game_over_flag:
 		return
 	for dir in inputs.keys():
 		if event.is_action(dir):
@@ -63,6 +63,7 @@ func update_animation_parameters(move_input: Vector2):
 		
 func game_over():
 	game_over_flag = true
+	set_process_input(false)
 	state_machine.travel("over_front")
 	await animation_player.animation_finished
 	
