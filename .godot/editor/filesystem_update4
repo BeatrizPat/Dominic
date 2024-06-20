@@ -1,7 +1,10 @@
+res://level/opening_scene.tscn
 res://level/game_level.tscn
-res://animated_water.tres
-res://level/control.tscn
-res://characters/dog_player.tscn
-res://characters/enemy.tscn
+res://player/dog_player.tscn
+res://enemy/enemy.tscn
 res://level/end_scene.tscn
-res://characters/dog_player.gd
+res://items/bone.tscn
+res://manager/manager.tscn
+res://items/bone.gd
+res://player/dog_player.gd
+res://enemy/enemy_movement.gd

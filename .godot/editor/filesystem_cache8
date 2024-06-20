@@ -1,13 +1,9 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1718135202
-animated_water.tres::AnimatedTexture::6160646321485401574::1718133654::0::1::::<><>::uid://cpkyy8he6uh0w::::res://assets/tilesets/water/water_1.png<>uid://dp0kl3nwhsy8a::::res://assets/tilesets/water/water_2.png<>uid://fvrirt47s5qu::::res://assets/tilesets/water/water_3.png
-Control.gd::GDScript::-1::1717105607::0::1::::<>Control<>::
+::res://::1718924214
 Default theme.tres::Theme::1628935620730373637::1717105607::0::1::::<><>::
 icon.svg::CompressedTexture2D::6220877556002403106::1717105607::1717105715::1::::<><>::
-Play.gd::GDScript::-1::1717105607::0::1::::<>Button<>::
 README.md::TextFile::-1::1717105607::0::1::::<><>::
-::res://assets/::1718129298
-background.png::CompressedTexture2D::780443401512741921::1717105607::1717105607::1::::<><>::
+::res://assets/::1718915031
 ::res://assets/bone/::1718129309
 bone.png::CompressedTexture2D::2183809801335676872::1718129298::1718129309::1::::<><>::
 ::res://assets/buttons/::1717105607
@@ -16,29 +12,38 @@ botao_hover.png::CompressedTexture2D::7536546766057267025::1717105607::171710560
 ::res://assets/dog/::1718129310
 cachorro-sentado-sheet-completo.png::CompressedTexture2D::7139061661909746365::1718129298::1718129310::1::::<><>::
 cachorro-sheet-finalizado.png::CompressedTexture2D::1914774618134217276::1717105607::1717105607::1::::<><>::
-::res://assets/enemy/::1718129309
-000.png::CompressedTexture2D::4596554176938480457::1675626020::1717435655::1::::<><>::
-enemy_colors.png::CompressedTexture2D::3141892599305326384::1718129298::1718129309::1::::<><>::
-purple ghost.png::CompressedTexture2D::813352426007357036::1713373514::1717435459::1::::<><>::
-::res://assets/tilesets/::1718129298
-Grass.png::CompressedTexture2D::276712742145347316::1717105607::1717105607::1::::<><>::
-Hills.png::CompressedTexture2D::2317599641169086943::1717105607::1717105607::1::::<><>::
-TX Plant.png::CompressedTexture2D::3086854795477582587::1717105607::1717105607::1::::<><>::
-TX Props.png::CompressedTexture2D::4965324606742917992::1717105607::1717105607::1::::<><>::
-Water.png::CompressedTexture2D::7498144445653479268::1717105607::1717105607::1::::<><>::
-::res://assets/tilesets/water/::1718129309
-water_1.png::CompressedTexture2D::5847819610685547092::1718129298::1718129308::1::::<><>::
-water_2.png::CompressedTexture2D::8264332454907833282::1718129298::1718129309::1::::<><>::
-water_3.png::CompressedTexture2D::395343549863055388::1718129298::1718129309::1::::<><>::
-water_animated.png::CompressedTexture2D::3015043478973884275::1718129298::1718129309::1::::<><>::
-::res://characters/::1718134602
-dog_player.gd::GDScript::-1::1718133671::0::1::::<>CharacterBody2D<>::
-dog_player.tscn::PackedScene::2214286011434126884::1718134602::0::1::::<><>::res://characters/dog_player.gd<>uid://2jsb8j3ik4bw::::res://assets/dog/cachorro-sheet-finalizado.png
-enemy.tscn::PackedScene::1835910232797161205::1718134602::0::1::::<><>::uid://b6quttspwvhjt::::res://assets/enemy/000.png<>res://characters/enemy_1.gd
-enemy_1.gd::GDScript::-1::1718042101::0::1::::<>enemy_movement<>::
-enemy_movement.gd::GDScript::-1::1718042930::0::1::::enemy_movement<>CharacterBody2D<>::
-::res://level/::1718134602
-control.gd::GDScript::-1::1717105607::0::1::::<>Control<>::
-control.tscn::PackedScene::8123645169317612854::1718134602::0::1::::<><>::res://level/control.gd<>uid://c6y0mq5ks2ggf::::res://assets/buttons/botao.png<>uid://leb1237dxy38::::res://assets/background.png<>uid://dfm03ax0sdxgr::::res://assets/buttons/botao_hover.png
-end_scene.tscn::PackedScene::3553945729230831180::1718134602::0::1::::<><>::uid://leb1237dxy38::::res://assets/background.png
-game_level.tscn::PackedScene::823007552526679243::1718134602::0::1::::<><>::uid://6su7471wdxtk::::res://characters/dog_player.tscn<>uid://d7bohyfu6t7q::::res://assets/tilesets/Grass.png<>uid://de3flxd85q23a::::res://assets/tilesets/Water.png<>uid://1flf5ls2ugef::::res://characters/enemy.tscn<>uid://ct1i7ehyt2hhu::::res://animated_water.tres<>uid://bi7rlcng1c4nv::::res://assets/tilesets/water/water_animated.png
+::res://assets/enemy/::1718914888
+000.png::CompressedTexture2D::4596554176938480457::1675626020::1718914888::1::::<><>::
+enemy_colors.png::CompressedTexture2D::3141892599305326384::1718129298::1718914888::1::::<><>::
+purple ghost.png::CompressedTexture2D::813352426007357036::1713373514::1718914888::1::::<><>::
+::res://assets/tilemap/::1718915031
+animated_water.tres::AnimatedTexture::6160646321485401574::1718914904::0::1::::<><>::uid://cpkyy8he6uh0w::::res://assets/tilemap/water/water_1.png<>uid://dp0kl3nwhsy8a::::res://assets/tilemap/water/water_2.png<>uid://fvrirt47s5qu::::res://assets/tilemap/water/water_3.png
+background.png::CompressedTexture2D::780443401512741921::1717105607::1718914907::1::::<><>::
+Grass.png::CompressedTexture2D::276712742145347316::1717105607::1718914904::1::::<><>::
+Hills.png::CompressedTexture2D::2317599641169086943::1717105607::1718914904::1::::<><>::
+TX Plant.png::CompressedTexture2D::3086854795477582587::1717105607::1718914905::1::::<><>::
+TX Props.png::CompressedTexture2D::4965324606742917992::1717105607::1718914905::1::::<><>::
+Water.png::CompressedTexture2D::7498144445653479268::1717105607::1718914905::1::::<><>::
+::res://assets/tilemap/water/::1718914904
+water_1.png::CompressedTexture2D::5847819610685547092::1718129298::1718914904::1::::<><>::
+water_2.png::CompressedTexture2D::8264332454907833282::1718129298::1718914904::1::::<><>::
+water_3.png::CompressedTexture2D::395343549863055388::1718129298::1718914904::1::::<><>::
+water_animated.png::CompressedTexture2D::3015043478973884275::1718129298::1718914904::1::::<><>::
+::res://enemy/::1718924155
+enemy.gd::GDScript::-1::1718042101::0::1::::<>enemy_movement<>::
+enemy.tscn::PackedScene::1835910232797161205::1718924155::0::1::::<><>::res://enemy/enemy.gd<>uid://bk07rn7tlf45i::::res://assets/enemy/enemy_colors.png
+enemy_movement.gd::GDScript::-1::1718915577::0::1::::enemy_movement<>CharacterBody2D<>::
+::res://items/::1718924156
+bone.gd::GDScript::-1::1718914767::0::1::::<>Area2D<>::
+bone.tscn::PackedScene::3874392316673068443::1718924156::0::1::::<><>::uid://6d4a72bbort5::::res://assets/bone/bone.png<>res://items/bone.gd
+::res://level/::1718924155
+end_scene.tscn::PackedScene::3553945729230831180::1718924155::0::1::::<><>::uid://bi7rlcng1c4nv::::res://assets/tilemap/water/water_animated.png
+game_level.tscn::PackedScene::823007552526679243::1718924155::0::1::::<><>::uid://6su7471wdxtk::::res://player/dog_player.tscn<>uid://d7bohyfu6t7q::::res://assets/tilemap/Grass.png<>uid://de3flxd85q23a::::res://assets/tilemap/Water.png<>uid://1flf5ls2ugef::::res://enemy/enemy.tscn<>uid://ct1i7ehyt2hhu::::res://assets/tilemap/animated_water.tres<>uid://bi7rlcng1c4nv::::res://assets/tilemap/water/water_animated.png<>uid://bvg1w706cppe6::::res://items/bone.tscn<>uid://c61d3arxk3uuy::::res://manager/manager.tscn
+opening_scene.gd::GDScript::-1::1717105607::0::1::::<>Control<>::
+opening_scene.tscn::PackedScene::8123645169317612854::1718924155::0::1::::<><>::res://level/opening_scene.gd<>uid://c6y0mq5ks2ggf::::res://assets/buttons/botao.png<>uid://dfm03ax0sdxgr::::res://assets/buttons/botao_hover.png<>uid://bi7rlcng1c4nv::::res://assets/tilemap/water/water_animated.png
+::res://manager/::1718924156
+manager.gd::GDScript::-1::1718915888::0::1::::<>Node2D<>::
+manager.tscn::PackedScene::7002601522299574192::1718924156::0::1::::<><>::res://manager/manager.gd
+::res://player/::1718924155
+dog_player.gd::GDScript::-1::1718922480::0::1::::<>CharacterBody2D<>::
+dog_player.tscn::PackedScene::2214286011434126884::1718924155::0::1::::<><>::res://player/dog_player.gd<>uid://c8yhkj0dmatxd::::res://assets/dog/cachorro-sentado-sheet-completo.png

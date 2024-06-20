@@ -1,0 +1,55 @@
+[gd_scene load_steps=8 format=3 uid="uid://bvg1w706cppe6"]
+
+[ext_resource type="Texture2D" uid="uid://6d4a72bbort5" path="res://assets/bone/bone.png" id="1_1ssgb"]
+[ext_resource type="Script" path="res://items/bone.gd" id="1_h17jb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3tvoj"]
+atlas = ExtResource("1_1ssgb")
+region = Rect2(0, 0, 700, 710)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5x167"]
+atlas = ExtResource("1_1ssgb")
+region = Rect2(700, 0, 700, 710)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c1ghb"]
+atlas = ExtResource("1_1ssgb")
+region = Rect2(1400, 0, 700, 710)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jl2nv"]
+animations = [{
+"frames": [{
+"duration": 2.5,
+"texture": SubResource("AtlasTexture_3tvoj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5x167")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c1ghb")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ew628"]
+size = Vector2(11, 6)
+
+[node name="bone" type="Area2D"]
+collision_layer = 8
+collision_mask = 2
+script = ExtResource("1_h17jb")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(9, 6.90179)
+scale = Vector2(0.0264286, 0.0278924)
+sprite_frames = SubResource("SpriteFrames_jl2nv")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.182432
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(8.5, 7)
+shape = SubResource("RectangleShape2D_ew628")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
