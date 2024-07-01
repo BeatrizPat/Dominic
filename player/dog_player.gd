@@ -66,6 +66,7 @@ func game_over():
 	print("gameover")
 	game_over_flag = true
 	set_process_input(false)
+	update_animation_parameters(starting_direction)
 	state_machine.travel("over_front")
 	await animation_player.animation_finished
 	

@@ -1,0 +1,42 @@
+[gd_scene load_steps=2 format=3 uid="uid://cx6enkcpsyd48"]
+
+[ext_resource type="Texture2D" uid="uid://cyisccgijovsw" path="res://assets/bone/bone_simple1.png" id="1_g3pyk"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.426072, 0.431552)
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+layout_mode = 2
+offset_left = 211.232
+offset_top = -4.63443
+offset_right = 911.232
+offset_bottom = 705.366
+scale = Vector2(0.076356, 0.0839233)
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture = ExtResource("1_g3pyk")
+metadata/_edit_use_anchors_ = true
+
+[node name="score" type="Label" parent="Control"]
+layout_mode = 2
+offset_left = 255.825
+offset_top = 11.5861
+offset_right = 293.825
+offset_bottom = 34.5861
+text = "label"
+
+[node name="time" type="Label" parent="Control"]
+offset_left = 361.441
+offset_top = 11.5861
+offset_right = 401.441
+offset_bottom = 34.5861
+text = "time
+"

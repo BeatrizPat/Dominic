@@ -40,7 +40,7 @@ collision_layer = 8
 collision_mask = 2
 script = ExtResource("1_h17jb")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." groups=["global"]]
 position = Vector2(9, 6.90179)
 scale = Vector2(0.0264286, 0.0278924)
 sprite_frames = SubResource("SpriteFrames_jl2nv")

@@ -6,5 +6,11 @@ res://level/end_scene.tscn
 res://items/bone.tscn
 res://manager/manager.tscn
 res://items/bone.gd
+res://hud/global.gd
 res://player/dog_player.gd
+res://enemy/enemy.gd
 res://enemy/enemy_movement.gd
+res://level/opening_scene.gd
+res://hud/hud.tscn
+res://manager.gd
+res://level/game_level.gd
