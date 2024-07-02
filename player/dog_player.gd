@@ -25,7 +25,8 @@ func _ready():
 	#position += Vector2.ONE * tile_size/2
 	
 func _process(delta):
-	if (not moving) and (not game_over_flag): state_machine.travel("idle")
+	if (not moving) and not game_over_flag: state_machine.travel("idle")
+	
 	#print(state_machine.get_current_node())
 
 # Recebe os eventos de teclado
@@ -65,16 +66,17 @@ func update_animation_parameters(move_input: Vector2):
 		animation_tree.set("parameters/idle/blend_position", move_input)
 		animation_tree.set("parameters/walk/blend_position", move_input)
 
-#Função para animação de game over e ncerra o jogo
+#Função para animação de game over e encerra o jogo
 func game_over():
 	print("gameover")
 	game_over_flag = true
 	set_process_input(false)
-	state_machine.travel("End")
-	print(current_direction)
 	var animation_name = "over_"+current_direction
+	state_machine.travel(animation_name)
+	print(current_direction)
 	print(animation_name)
-	animation_player.play(animation_name)
+	print(state_machine.get_current_node())
+	#animation_player.play(animation_name)
 	#animation_tree.set("parameters/game over/blend_position", current_direction)
 	await 500
 	

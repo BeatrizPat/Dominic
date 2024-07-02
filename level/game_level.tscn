@@ -380,7 +380,7 @@ offset_right = -62.0
 offset_bottom = 21.0
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 120.0
+wait_time = 10.0
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://6su7471wdxtk"]
+[gd_scene load_steps=49 format=3 uid="uid://6su7471wdxtk"]
 
 [ext_resource type="Script" path="res://player/dog_player.gd" id="1_nr1kn"]
 [ext_resource type="Texture2D" uid="uid://c8yhkj0dmatxd" path="res://assets/dog/cachorro-sentado-sheet-completo.png" id="2_1pipw"]
@@ -344,6 +344,18 @@ min_space = Vector2(-1, -1.1)
 max_space = Vector2(1, 1.1)
 blend_mode = 1
 
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_kotxq"]
+animation = &"over_down"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_myodw"]
+animation = &"over_left"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_b5oj7"]
+animation = &"over_right"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_4nf3q"]
+animation = &"over_up"
+
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_eeolg"]
 animation = &"walk_down"
 
@@ -378,19 +390,44 @@ advance_mode = 0
 [sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_rnvvi"]
 advance_mode = 0
 
-[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_3elh5"]
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_b4o1d"]
 switch_mode = 2
 
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_o5v1y"]
+switch_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_lnuj8"]
+switch_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_e3y1l"]
+switch_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_n2kg8"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_tw3mq"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_fob4s"]
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_mwa0o"]
+
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_46la2"]
-states/End/position = Vector2(688.889, 143.654)
+states/End/position = Vector2(768.889, 142.321)
 states/Start/position = Vector2(209.333, 100.512)
 "states/game over/node" = SubResource("AnimationNodeBlendSpace2D_hsqht")
-"states/game over/position" = Vector2(466.333, 206.333)
+"states/game over/position" = Vector2(77, 34.3333)
 states/idle/node = SubResource("AnimationNodeBlendSpace2D_b5f6a")
-states/idle/position = Vector2(310.667, 101.447)
+states/idle/position = Vector2(309.778, 99.3114)
+states/over_down/node = SubResource("AnimationNodeAnimation_kotxq")
+states/over_down/position = Vector2(593.395, 50.3333)
+states/over_left/node = SubResource("AnimationNodeAnimation_myodw")
+states/over_left/position = Vector2(593.889, 111.222)
+states/over_right/node = SubResource("AnimationNodeAnimation_b5oj7")
+states/over_right/position = Vector2(592.407, 162.333)
+states/over_up/node = SubResource("AnimationNodeAnimation_4nf3q")
+states/over_up/position = Vector2(589.741, 227.667)
 states/walk/node = SubResource("AnimationNodeBlendSpace2D_jd33c")
-states/walk/position = Vector2(453.334, 100.808)
-transitions = ["Start", "idle", SubResource("AnimationNodeStateMachineTransition_2sann"), "idle", "walk", SubResource("AnimationNodeStateMachineTransition_x6tka"), "walk", "idle", SubResource("AnimationNodeStateMachineTransition_rnvvi"), "idle", "End", SubResource("AnimationNodeStateMachineTransition_3elh5")]
+states/walk/position = Vector2(310.667, 206.141)
+transitions = ["Start", "idle", SubResource("AnimationNodeStateMachineTransition_2sann"), "idle", "walk", SubResource("AnimationNodeStateMachineTransition_x6tka"), "walk", "idle", SubResource("AnimationNodeStateMachineTransition_rnvvi"), "over_down", "End", SubResource("AnimationNodeStateMachineTransition_b4o1d"), "over_left", "End", SubResource("AnimationNodeStateMachineTransition_o5v1y"), "over_right", "End", SubResource("AnimationNodeStateMachineTransition_lnuj8"), "over_up", "End", SubResource("AnimationNodeStateMachineTransition_e3y1l"), "idle", "over_down", SubResource("AnimationNodeStateMachineTransition_n2kg8"), "idle", "over_left", SubResource("AnimationNodeStateMachineTransition_tw3mq"), "idle", "over_right", SubResource("AnimationNodeStateMachineTransition_fob4s"), "idle", "over_up", SubResource("AnimationNodeStateMachineTransition_mwa0o")]
 graph_offset = Vector2(1, 23)
 
 [node name="DogPlayer" type="CharacterBody2D"]
