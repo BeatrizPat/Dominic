@@ -1,6 +1,6 @@
 extends Node2D
 
-@onready var score_label := $CanvasLayer/Control/score as Label
+@onready var score_label := $Control/score as Label
 var score := 0
 # Called when the node enters the scene tree for the first time.
 func _ready():

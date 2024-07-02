@@ -1,9 +1,9 @@
+Control
 Label
 CanvasLayer
 TextureRect
 HBoxContainer
 Container
-Control
 Node2D
 Area2D
 CollisionShape2D

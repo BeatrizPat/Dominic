@@ -1,42 +1,97 @@
-[gd_scene load_steps=2 format=3 uid="uid://cx6enkcpsyd48"]
+[gd_scene load_steps=11 format=3 uid="uid://cx6enkcpsyd48"]
 
 [ext_resource type="Texture2D" uid="uid://cyisccgijovsw" path="res://assets/bone/bone_simple1.png" id="1_g3pyk"]
+[ext_resource type="Texture2D" uid="uid://col1flabmvya3" path="res://assets/clock/row-1-column-1.png" id="2_mo20g"]
+[ext_resource type="Texture2D" uid="uid://714bsuajxou1" path="res://assets/clock/row-1-column-2.png" id="3_u1byw"]
+[ext_resource type="Texture2D" uid="uid://donraqfxikkuh" path="res://assets/clock/row-1-column-3.png" id="4_wte81"]
+[ext_resource type="Texture2D" uid="uid://oex1npis2wug" path="res://assets/clock/row-1-column-4.png" id="5_m11uf"]
+[ext_resource type="Texture2D" uid="uid://brfgwfarqx3py" path="res://assets/clock/row-1-column-5.png" id="6_4c7u8"]
+[ext_resource type="Texture2D" uid="uid://dinq46vouh7ht" path="res://assets/clock/row-1-column-6.png" id="7_hyuwc"]
+[ext_resource type="Texture2D" uid="uid://dtfqrhwdcrpw1" path="res://assets/clock/row-1-column-7.png" id="8_qi804"]
+[ext_resource type="Texture2D" uid="uid://bm6cv4dj7y4j0" path="res://assets/clock/row-1-column-8.png" id="9_j3sal"]
 
-[node name="CanvasLayer" type="CanvasLayer"]
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_1rwke"]
+frames = 8
+frame_0/texture = ExtResource("2_mo20g")
+frame_1/texture = ExtResource("3_u1byw")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("4_wte81")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("5_m11uf")
+frame_3/duration = 1.0
+frame_4/texture = ExtResource("6_4c7u8")
+frame_4/duration = 1.0
+frame_5/texture = ExtResource("7_hyuwc")
+frame_5/duration = 1.0
+frame_6/texture = ExtResource("8_qi804")
+frame_6/duration = 1.0
+frame_7/texture = ExtResource("9_j3sal")
+frame_7/duration = 1.0
 
-[node name="Control" type="Control" parent="."]
+[node name="Control" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-scale = Vector2(0.426072, 0.431552)
 
-[node name="TextureRect" type="TextureRect" parent="Control"]
+[node name="score_image" type="TextureRect" parent="."]
 layout_mode = 2
-offset_left = 211.232
-offset_top = -4.63443
-offset_right = 911.232
-offset_bottom = 705.366
-scale = Vector2(0.076356, 0.0839233)
+anchor_left = 0.227
+anchor_top = 0.011
+anchor_right = 0.322
+anchor_bottom = 0.08
+offset_left = -0.170029
+offset_top = -21.7
+offset_right = 691.272
+offset_bottom = 705.597
+scale = Vector2(0.0891537, 0.0979893)
 size_flags_horizontal = 0
 size_flags_vertical = 0
 texture = ExtResource("1_g3pyk")
-metadata/_edit_use_anchors_ = true
 
-[node name="score" type="Label" parent="Control"]
+[node name="score" type="Label" parent="."]
 layout_mode = 2
-offset_left = 255.825
-offset_top = 11.5861
-offset_right = 293.825
-offset_bottom = 34.5861
+anchor_left = 0.31
+anchor_top = 0.0297928
+anchor_right = 0.361
+anchor_bottom = 0.046
+offset_left = -0.0999908
+offset_top = -4.85493
+offset_right = 37.5491
+offset_bottom = 28.4857
+scale = Vector2(0.595179, 0.592334)
 text = "label"
 
-[node name="time" type="Label" parent="Control"]
-offset_left = 361.441
-offset_top = 11.5861
-offset_right = 401.441
-offset_bottom = 34.5861
+[node name="timer_image" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.581797
+anchor_top = 0.0264825
+anchor_right = 0.625595
+anchor_bottom = 0.0701089
+offset_left = -113.076
+offset_top = -5.53773
+offset_right = 555.827
+offset_bottom = 673.924
+grow_horizontal = 2
+scale = Vector2(0.0315846, 0.0305805)
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture = SubResource("AnimatedTexture_1rwke")
+
+[node name="time" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.637993
+anchor_top = 0.0297928
+anchor_right = 0.694331
+anchor_bottom = 0.0626499
+offset_left = -124.975
+offset_top = -4.85494
+offset_right = -91.2287
+offset_bottom = 16.8308
+scale = Vector2(0.653965, 0.637841)
 text = "time
 "
