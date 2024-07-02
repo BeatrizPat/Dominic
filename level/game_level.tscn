@@ -295,7 +295,7 @@ script = ExtResource("1_nl7ns")
 
 [node name="DogPlayer" parent="." instance=ExtResource("1_s4lu3")]
 z_index = 2
-position = Vector2(56, 49)
+position = Vector2(56, 64)
 starting_direction = Vector2(0, 1)
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -378,5 +378,10 @@ offset_left = -98.0
 offset_top = -2.0
 offset_right = -62.0
 offset_bottom = 21.0
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 120.0
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 
 [editable path="Control"]

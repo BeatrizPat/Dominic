@@ -13,17 +13,20 @@ var inputs = {"right": Vector2.RIGHT,
 var moving = false
 var game_over_flag = false
 var animation_speed = 2
+var current_direction
 
 # Inicializa a direção do player e ajusta posição centralizado na tile
 func _ready():
+	add_to_group("global")
 	animation_tree.active = true
 	update_animation_parameters(starting_direction)
 	state_machine.travel("idle")
-	position = position.snapped(Vector2.ONE * tile_size)
-	position += Vector2.ONE * tile_size/2
+	#position = position.snapped(Vector2.ONE * tile_size)
+	#position += Vector2.ONE * tile_size/2
 	
 func _process(delta):
 	if (not moving) and (not game_over_flag): state_machine.travel("idle")
+	#print(state_machine.get_current_node())
 
 # Recebe os eventos de teclado
 func _unhandled_input(event):
@@ -32,6 +35,7 @@ func _unhandled_input(event):
 	for dir in inputs.keys():
 		if event.is_action(dir):
 			move(dir)
+			current_direction = dir
 		
 # Função de movimentação do player
 func move(dir):
@@ -66,10 +70,15 @@ func game_over():
 	print("gameover")
 	game_over_flag = true
 	set_process_input(false)
-	update_animation_parameters(starting_direction)
-	state_machine.travel("over_front")
-	await animation_player.animation_finished
+	state_machine.travel("End")
+	print(current_direction)
+	var animation_name = "over_"+current_direction
+	print(animation_name)
+	animation_player.play(animation_name)
+	#animation_tree.set("parameters/game over/blend_position", current_direction)
+	await 500
 	
 func animation_game_over_finished():
-	get_tree().change_scene_to_file("res://level/end_scene.tscn")
+	print("change scene")
+	get_tree().call_group("global", "game_over_scene")
 		

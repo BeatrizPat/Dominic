@@ -1,7 +1,8 @@
+TextureRect
+Timer
 Control
 Label
 CanvasLayer
-TextureRect
 HBoxContainer
 Container
 Node2D
@@ -10,5 +11,4 @@ CollisionShape2D
 AnimatedSprite2D
 TileMap
 RayCast2D
-Timer
 AnimationPlayer
