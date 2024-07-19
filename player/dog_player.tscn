@@ -465,3 +465,5 @@ scale = Vector2(1.18912, 0.656632)
 target_position = Vector2(2.40458e-07, 8.90485)
 collision_mask = 23
 collide_with_areas = true
+
+[node name="Marker2D" type="Marker2D" parent="."]

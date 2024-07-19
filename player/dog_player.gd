@@ -6,6 +6,7 @@ extends CharacterBody2D
 @onready var animation_player = $AnimationPlayer
 @onready var state_machine = animation_tree.get("parameters/playback")
 @onready var ray = $RayCast2D
+@onready var pointer_obstaculo = $Marker2D
 var inputs = {"right": Vector2.RIGHT,
 			"left": Vector2.LEFT,
 			"up": Vector2.UP,
@@ -14,13 +15,18 @@ var moving = false
 var game_over_flag = false
 var animation_speed = 2
 var current_direction
+var current_direction_name
 
 # Inicializa a direção do player e ajusta posição centralizado na tile
 func _ready():
 	add_to_group("global")
+	add_to_group("enter")
 	animation_tree.active = true
 	update_animation_parameters(starting_direction)
 	state_machine.travel("idle")
+	current_direction = starting_direction
+	current_direction_name = "down"
+	
 	#position = position.snapped(Vector2.ONE * tile_size)
 	#position += Vector2.ONE * tile_size/2
 	
@@ -31,12 +37,15 @@ func _process(delta):
 
 # Recebe os eventos de teclado
 func _unhandled_input(event):
+	
 	if moving or game_over_flag:
 		return
 	for dir in inputs.keys():
 		if event.is_action(dir):
 			move(dir)
-			current_direction = dir
+			current_direction = inputs[dir]
+			current_direction_name = dir
+	if event.is_action_pressed('space'): obstacles()
 		
 # Função de movimentação do player
 func move(dir):
@@ -73,9 +82,8 @@ func game_over():
 	set_process_input(false)
 	var animation_name
 	if(current_direction):
-		animation_name = "over_"+current_direction
+		animation_name = "over_" + current_direction_name
 	else: 
-		current_direction = 'down'
 		animation_name = "over_down"
 	state_machine.travel(animation_name)
 	print(current_direction)
@@ -88,4 +96,9 @@ func game_over():
 func animation_game_over_finished():
 	print("change scene")
 	get_tree().call_group("global", "game_over_scene")
+	
+func obstacles():
+	print(pointer_obstaculo)
+	get_tree().call_group("enter", "instantiate_obstacle", self.global_position + (current_direction * tile_size) )
+	
 		

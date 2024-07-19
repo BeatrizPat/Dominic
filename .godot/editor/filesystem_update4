@@ -7,3 +7,6 @@ res://items/bone.tscn
 res://hud/hud.tscn
 res://objects/obstaculo.tscn
 res://player/dog_player.gd
+res://level/opening_scene.gd
+res://objects/obstaculo.gd
+res://level/game_level.gd

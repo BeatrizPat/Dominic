@@ -3,12 +3,15 @@ extends Node2D
 @onready var score_label := $Control/score as Label
 @onready var timer_label := $Control/time as Label
 @onready var timer := $Timer
+@onready var obstaculo_scene = preload("res://objects/obstaculo.tscn")
+
 var score := 0
 var tempo_restante := 0
 var label_timer
 
 func _ready():
 	add_to_group("global")
+	add_to_group("enter")
 	score_label.text = str(int(score))
 	tempo_restante = int(timer.get_time_left())
 	label_timer = str(tempo_restante)
@@ -34,3 +37,8 @@ func _on_timer_timeout():
 	
 func game_over_scene():
 	get_tree().change_scene_to_file("res://level/end_scene.tscn")
+	
+func instantiate_obstacle(position):
+	var obstaculo_instance = obstaculo_scene.instantiate()
+	add_child(obstaculo_instance)
+	obstaculo_instance.global_position = position

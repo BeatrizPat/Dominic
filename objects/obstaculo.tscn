@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://buwgjv6smvs78"]
+[gd_scene load_steps=6 format=3 uid="uid://buwgjv6smvs78"]
 
+[ext_resource type="Script" path="res://objects/obstaculo.gd" id="1_cycj1"]
 [ext_resource type="Texture2D" uid="uid://cc0if2qkl3svg" path="res://assets/tilemap/TX Props.png" id="1_x50lg"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_m45qh"]
@@ -23,6 +24,7 @@ size = Vector2(16, 16)
 [node name="obstaculo" type="Area2D"]
 collision_layer = 16
 collision_mask = 6
+script = ExtResource("1_cycj1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.479607, 0.471431)
