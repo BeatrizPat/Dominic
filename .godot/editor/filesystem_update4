@@ -5,3 +5,5 @@ res://enemy/enemy.tscn
 res://level/end_scene.tscn
 res://items/bone.tscn
 res://hud/hud.tscn
+res://objects/obstaculo.tscn
+res://player/dog_player.gd

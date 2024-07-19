@@ -71,7 +71,12 @@ func game_over():
 	print("gameover")
 	game_over_flag = true
 	set_process_input(false)
-	var animation_name = "over_"+current_direction
+	var animation_name
+	if(current_direction):
+		animation_name = "over_"+current_direction
+	else: 
+		current_direction = 'down'
+		animation_name = "over_down"
 	state_machine.travel(animation_name)
 	print(current_direction)
 	print(animation_name)
