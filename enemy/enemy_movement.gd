@@ -23,13 +23,11 @@ func _physics_process(delta):
 		ray.target_position = dir[rand] * tile_size/2
 		ray.force_raycast_update()
 		if ray.is_colliding():
-			
 			var regex = RegEx.new()
 			regex.compile("DogPlayer")
 			var result = regex.search(ray.get_collider().name)
 			print(ray.get_collider().name)
 			if result: 
-				
 				ray.get_collider().game_over()
 				game_over()
 			else: change_direction()

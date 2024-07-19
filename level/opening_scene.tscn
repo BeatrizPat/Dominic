@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://c6y0mq5ks2ggf" path="res://assets/buttons/botao.png" id="2_fd2xf"]
 [ext_resource type="Texture2D" uid="uid://dfm03ax0sdxgr" path="res://assets/buttons/botao_hover.png" id="3_f65ao"]
 [ext_resource type="Texture2D" uid="uid://bi7rlcng1c4nv" path="res://assets/tilemap/water/water_animated.png" id="4_p8o64"]
-[ext_resource type="Texture2D" uid="uid://branss2btembu" path="res://assets/begin_scene/1.png" id="5_tl2ih"]
+[ext_resource type="Texture2D" uid="uid://branss2btembu" path="res://assets/opening_scene/1.png" id="5_tl2ih"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5247w"]
 texture = ExtResource("4_p8o64")
