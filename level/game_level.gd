@@ -41,4 +41,9 @@ func game_over_scene():
 func instantiate_obstacle(position):
 	var obstaculo_instance = obstaculo_scene.instantiate()
 	add_child(obstaculo_instance)
+	obstaculo_instance.name = 'obstaculo'
 	obstaculo_instance.global_position = position
+	
+func free_obstacle(object):
+	object.queue_free()
+	print('free')
