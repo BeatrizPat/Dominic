@@ -100,13 +100,11 @@ func animation_game_over_finished():
 func obstacles():
 	print(pointer_obstaculo)
 	if !ray.is_colliding():
-		
 		get_tree().call_group("enter", "instantiate_obstacle", self.global_position + (current_direction * tile_size) )
 	elif ray.is_colliding():
 		var regex = RegEx.new()
 		regex.compile("obstaculo")
 		var result = regex.search(ray.get_collider().name)
 		if result:
-			print('colidiu ', result)
 			get_tree().call_group("enter", "free_obstacle", ray.get_collider())
 		

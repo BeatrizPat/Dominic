@@ -46,4 +46,3 @@ func instantiate_obstacle(position):
 	
 func free_obstacle(object):
 	object.queue_free()
-	print('free')
