@@ -63,9 +63,11 @@ func move(dir):
 	if ray.is_colliding(): 
 		var regex = RegEx.new()
 		regex.compile("Enemy")
-		var result = regex.search(ray.get_collider().name)
+		var result1 = regex.search(ray.get_collider().name)
+		regex.compile("enemy")
+		var result2 = regex.search(ray.get_collider().name)
 		print(ray.get_collider().name)
-		if result: 
+		if result1 or result2: 
 			ray.get_collider().game_over()
 			game_over()
 		

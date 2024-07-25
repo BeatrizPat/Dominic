@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://c8yhkj0dmatxd" path="res://assets/dog/cachorro-sentado-sheet-completo.png" id="2_1pipw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uebv3"]
-size = Vector2(20.5461, 15.8045)
+size = Vector2(20.5461, 21.5918)
 
 [sub_resource type="Animation" id="Animation_uuptj"]
 length = 0.001
@@ -444,7 +444,7 @@ vframes = 7
 frame = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(3.57628e-07, 3.2422)
+position = Vector2(3.57628e-07, 1.5)
 scale = Vector2(0.778738, 0.602081)
 shape = SubResource("RectangleShape2D_uebv3")
 
