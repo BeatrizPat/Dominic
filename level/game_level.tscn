@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://lyw2xfihrk8j"]
+[gd_scene load_steps=16 format=3 uid="uid://lyw2xfihrk8j"]
 
 [ext_resource type="Script" path="res://level/game_level.gd" id="1_nl7ns"]
 [ext_resource type="PackedScene" uid="uid://6su7471wdxtk" path="res://player/dog_player.tscn" id="1_s4lu3"]
@@ -9,7 +9,6 @@
 [ext_resource type="Texture2D" uid="uid://bi7rlcng1c4nv" path="res://assets/tilemap/water/water_animated.png" id="5_8ulfn"]
 [ext_resource type="PackedScene" uid="uid://bvg1w706cppe6" path="res://items/bone.tscn" id="7_v6jh5"]
 [ext_resource type="PackedScene" uid="uid://cx6enkcpsyd48" path="res://hud/hud.tscn" id="9_hwe6f"]
-[ext_resource type="PackedScene" uid="uid://buwgjv6smvs78" path="res://objects/obstaculo.tscn" id="10_qgrl8"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_j3t1u"]
 vertices = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
@@ -320,6 +319,12 @@ position = Vector2(232, 36)
 [node name="Enemy 1" parent="enemies" instance=ExtResource("4_5vfro")]
 position = Vector2(56, 229)
 
+[node name="enemy" parent="enemies" instance=ExtResource("4_5vfro")]
+position = Vector2(120, 72)
+
+[node name="enemy2" parent="enemies" instance=ExtResource("4_5vfro")]
+position = Vector2(72, 104)
+
 [node name="items" type="Node2D" parent="."]
 position = Vector2(0, 8)
 
@@ -354,10 +359,10 @@ offset_right = 200.0
 offset_bottom = 8.0
 
 [node name="score_image" parent="Control" index="0"]
-offset_left = -40.0
-offset_top = -11.0
-offset_right = 660.0
-offset_bottom = 699.0
+offset_left = -64.0
+offset_top = -56.0
+offset_right = 636.0
+offset_bottom = 654.0
 scale = Vector2(0.043494, 0.0478045)
 
 [node name="score" parent="Control" index="1"]
@@ -382,9 +387,6 @@ offset_bottom = 21.0
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 120.0
-
-[node name="obstaculo" parent="." instance=ExtResource("10_qgrl8")]
-position = Vector2(72, 64)
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 

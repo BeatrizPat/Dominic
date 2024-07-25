@@ -6,7 +6,7 @@ extends CharacterBody2D
 @onready var animation_player = $AnimationPlayer
 @onready var state_machine = animation_tree.get("parameters/playback")
 @onready var ray = $RayCast2D
-@onready var pointer_obstaculo = $Marker2D
+
 var inputs = {"right": Vector2.RIGHT,
 			"left": Vector2.LEFT,
 			"up": Vector2.UP,
@@ -98,7 +98,6 @@ func animation_game_over_finished():
 	get_tree().call_group("global", "game_over_scene")
 	
 func obstacles():
-	print(pointer_obstaculo)
 	if !ray.is_colliding():
 		get_tree().call_group("enter", "instantiate_obstacle", self.global_position + (current_direction * tile_size) )
 	elif ray.is_colliding():

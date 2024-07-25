@@ -1,7 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://bqvs7406kb8d1"]
+[gd_scene load_steps=8 format=3 uid="uid://bqvs7406kb8d1"]
 
+[ext_resource type="Script" path="res://level/end_scene.gd" id="1_al3kg"]
 [ext_resource type="Texture2D" uid="uid://bi7rlcng1c4nv" path="res://assets/tilemap/water/water_animated.png" id="1_yr8x7"]
 [ext_resource type="Texture2D" uid="uid://tjcak563spi2" path="res://assets/end_scene/4.png" id="2_6gar6"]
+[ext_resource type="Texture2D" uid="uid://c1tal3syawnra" path="res://assets/buttons/botao_again_blue.png" id="4_gp4mg"]
+[ext_resource type="Texture2D" uid="uid://dwpwl5g8abca7" path="res://assets/buttons/botao_again_hover_blue.png" id="5_cguvy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rxhrd"]
 texture = ExtResource("1_yr8x7")
@@ -20,6 +23,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_al3kg")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_s1llw")
@@ -34,3 +38,14 @@ offset_right = 1115.0
 offset_bottom = 1122.0
 scale = Vector2(0.191038, 0.184415)
 texture = ExtResource("2_6gar6")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 111.0
+offset_top = 204.0
+offset_right = 166.0
+offset_bottom = 244.0
+texture_normal = ExtResource("4_gp4mg")
+texture_hover = ExtResource("5_cguvy")
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

@@ -88,3 +88,4 @@ shape = SubResource("RectangleShape2D_pafkh")
 position = Vector2(0, 6)
 target_position = Vector2(0, 3)
 collision_mask = 19
+collide_with_areas = true

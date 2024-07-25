@@ -46,3 +46,6 @@ func instantiate_obstacle(position):
 	
 func free_obstacle(object):
 	object.queue_free()
+
+func play_again():
+	print("play again")#get_tree().change_scene_to_file("res://level/game_level.tscn")
