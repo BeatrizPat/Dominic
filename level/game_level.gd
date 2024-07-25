@@ -4,10 +4,12 @@ extends Node2D
 @onready var timer_label := $Control/time as Label
 @onready var timer := $Timer
 @onready var obstaculo_scene = preload("res://objects/obstaculo.tscn")
+@onready var items = $items
 
 var score := 0
 var tempo_restante := 0
 var label_timer
+var items_count 
 
 func _ready():
 	add_to_group("global")
@@ -16,11 +18,12 @@ func _ready():
 	tempo_restante = int(timer.get_time_left())
 	label_timer = str(tempo_restante)
 	timer.start()
-
+	items_count = items.get_child_count()
 
 func _process(delta):
 	tempo_restante = timer.get_time_left()
 	update_timer_label(tempo_restante)
+	check_game_score()
 	
 func pontuacao_update():
 	print("update")
@@ -49,3 +52,9 @@ func free_obstacle(object):
 
 func play_again():
 	print("play again")#get_tree().change_scene_to_file("res://level/game_level.tscn")
+	
+func check_game_score():
+	if score == items_count:
+		get_tree().call_group("global", "game_win")
+		get_tree().change_scene_to_file("res://assets/end_scene/win_scene.tscn")
+		

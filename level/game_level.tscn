@@ -341,16 +341,13 @@ position = Vector2(48, 80)
 position = Vector2(48, 96)
 
 [node name="bone5" parent="items" instance=ExtResource("7_v6jh5")]
-position = Vector2(224, 104)
+position = Vector2(112, 32)
 
 [node name="bone6" parent="items" instance=ExtResource("7_v6jh5")]
-position = Vector2(224, 136)
+position = Vector2(128, 32)
 
 [node name="bone7" parent="items" instance=ExtResource("7_v6jh5")]
-position = Vector2(160, 96)
-
-[node name="bone8" parent="items" instance=ExtResource("7_v6jh5")]
-position = Vector2(96, 144)
+position = Vector2(192, 64)
 
 [node name="Control" parent="." instance=ExtResource("9_hwe6f")]
 offset_left = 200.0
@@ -359,10 +356,10 @@ offset_right = 200.0
 offset_bottom = 8.0
 
 [node name="score_image" parent="Control" index="0"]
-offset_left = -64.0
-offset_top = -56.0
-offset_right = 636.0
-offset_bottom = 654.0
+offset_left = -39.0
+offset_top = -11.0
+offset_right = 661.0
+offset_bottom = 699.0
 scale = Vector2(0.043494, 0.0478045)
 
 [node name="score" parent="Control" index="1"]
@@ -373,6 +370,10 @@ offset_bottom = 31.3406
 text = "score"
 
 [node name="timer_image" parent="Control" index="2"]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
 offset_left = -113.0
 offset_top = 0.0
 offset_right = 174.0
