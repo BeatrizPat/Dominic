@@ -59,6 +59,7 @@ func instance_obj(position, direction):
 	obstaculo_instance.name = 'obstaculo'
 	obstaculo_instance.global_position = position
 	return obstaculo_instance
+	
 func free_obstacle(object):
 	object.queue_free()
 
