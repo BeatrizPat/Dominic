@@ -7,9 +7,5 @@ res://items/bone.tscn
 res://hud/hud.tscn
 res://objects/obstaculo.tscn
 res://player/dog_player.gd
-res://enemy/enemy_movement.gd
-res://level/end_scene.gd
 res://level/game_level.gd
-res://assets/end_scene/control.tscn
-res://assets/end_scene/win_scene.gd
-res://assets/end_scene/win_scene.tscn
+res://objects/obstaculo.gd

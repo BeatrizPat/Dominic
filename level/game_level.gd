@@ -10,6 +10,7 @@ var score := 0
 var tempo_restante := 0
 var label_timer
 var items_count 
+var tile_size = 16
 
 func _ready():
 	add_to_group("global")
@@ -41,12 +42,23 @@ func _on_timer_timeout():
 func game_over_scene():
 	get_tree().change_scene_to_file("res://level/end_scene.tscn")
 	
-func instantiate_obstacle(position):
+func instantiate_obstacle(position, direction):
+	var obstaculo_instance =  instance_obj(position, direction)
+	while(1):
+		if position[0] > 55 and position[0] < 233:
+			if position[1] > 47 and position[1] < 241:
+				if(obstaculo_instance.verificar_ray()):
+					position = position + (direction *tile_size)
+					obstaculo_instance = instance_obj(position, direction)
+			else: break
+		else:break
+
+func instance_obj(position, direction):
 	var obstaculo_instance = obstaculo_scene.instantiate()
 	add_child(obstaculo_instance)
 	obstaculo_instance.name = 'obstaculo'
 	obstaculo_instance.global_position = position
-	
+	return obstaculo_instance
 func free_obstacle(object):
 	object.queue_free()
 
