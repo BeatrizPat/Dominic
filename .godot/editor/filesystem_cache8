@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1721916712
+::res://::1724356752
 Default theme.tres::Theme::1628935620730373637::1721916689::0::1::::<><>::
 README.md::TextFile::-1::1721916689::0::1::::<><>::
 ::res://assets/::1721916689
@@ -23,7 +23,7 @@ row-1-column-5.png::CompressedTexture2D::3590356767143928158::1721916689::172191
 row-1-column-6.png::CompressedTexture2D::7748634632221726969::1721916689::1721916689::1::::<><>::
 row-1-column-7.png::CompressedTexture2D::8504174201141677386::1721916689::1721916689::1::::<><>::
 row-1-column-8.png::CompressedTexture2D::3292842981647104607::1721916689::1721916689::1::::<><>::
-::res://assets/dog/::1721943011
+::res://assets/dog/::1721943013
 cachorro-sentado-sheet-completo.png::CompressedTexture2D::7139061661909746365::1721916689::1721916689::1::::<><>::
 cachorro-sheet-finalizado.png::CompressedTexture2D::1914774618134217276::1721916689::1721916689::1::::<><>::
 dom_feliz_heart.png::CompressedTexture2D::8688173143787801104::1721942533::1721942808::1::::<><>::
@@ -32,10 +32,13 @@ dom_feliz_heart_2.png::CompressedTexture2D::5322173261317065358::1721942987::172
 dom_feliz_heart_3.png::CompressedTexture2D::6301698743087163125::1721943000::1721943013::1::::<><>::
 dom_feliz_heart_sheet.png::CompressedTexture2D::7532870478497691591::1721942794::1721942808::1::::<><>::
 icon_dog.png::CompressedTexture2D::7288861175855530402::1721916689::1721916689::1::::<><>::
-::res://assets/end_scene/::1721942669
+::res://assets/end_scene/::1721948126
 4.png::CompressedTexture2D::1352289435918960791::1721916689::1721916689::1::::<><>::
 5.png::CompressedTexture2D::1335299802951631110::1721916689::1721916689::1::::<><>::
+control.tscn::PackedScene::2052646121478795455::1721943930::0::1::::<><>::uid://bi7rlcng1c4nv::::res://assets/tilemap/water/water_animated.png<>uid://ckp7gqe187v1h::::res://assets/end_scene/GAME PLAY.png<>res://assets/end_scene/win_scene.gd<>uid://c1tal3syawnra::::res://assets/buttons/botao_again_blue.png<>uid://dwpwl5g8abca7::::res://assets/buttons/botao_again_hover_blue.png<>uid://cou8i5by5vaau::::res://assets/dog/dom_feliz_heart_1.png<>uid://ch3doe63cuf47::::res://assets/dog/dom_feliz_heart_2.png<>uid://cv1ub7ui5p6xt::::res://assets/dog/dom_feliz_heart_3.png
 GAME PLAY.png::CompressedTexture2D::5507649976388901791::1721942584::1721942669::1::::<><>::
+win_scene.gd::GDScript::-1::1721945861::0::1::::<>Control<>::
+win_scene.tscn::PackedScene::6341182221264125823::1721948126::0::1::::<><>::uid://bi7rlcng1c4nv::::res://assets/tilemap/water/water_animated.png<>uid://ct1i7ehyt2hhu::::res://assets/tilemap/animated_water.tres<>uid://ckp7gqe187v1h::::res://assets/end_scene/GAME PLAY.png<>res://assets/end_scene/win_scene.gd<>uid://c1tal3syawnra::::res://assets/buttons/botao_again_blue.png<>uid://dwpwl5g8abca7::::res://assets/buttons/botao_again_hover_blue.png<>uid://cou8i5by5vaau::::res://assets/dog/dom_feliz_heart_1.png<>uid://ch3doe63cuf47::::res://assets/dog/dom_feliz_heart_2.png<>uid://cv1ub7ui5p6xt::::res://assets/dog/dom_feliz_heart_3.png
 ::res://assets/enemy/::1721916689
 000.png::CompressedTexture2D::4596554176938480457::1721916689::1721916689::1::::<><>::
 enemy_colors.png::CompressedTexture2D::3141892599305326384::1721916689::1721916689::1::::<><>::
@@ -57,25 +60,25 @@ water_1.png::CompressedTexture2D::5847819610685547092::1721916689::1721916689::1
 water_2.png::CompressedTexture2D::8264332454907833282::1721916689::1721916689::1::::<><>::
 water_3.png::CompressedTexture2D::395343549863055388::1721916689::1721916689::1::::<><>::
 water_animated.png::CompressedTexture2D::3015043478973884275::1721916689::1721916689::1::::<><>::
-::res://enemy/::1721936627
+::res://enemy/::1721948125
 enemy.gd::GDScript::-1::1721916689::0::1::::<>enemy_movement<>::
-enemy.tscn::PackedScene::1835910232797161205::1721936627::0::1::::<><>::res://enemy/enemy.gd<>uid://bk07rn7tlf45i::::res://assets/enemy/enemy_colors.png
+enemy.tscn::PackedScene::1835910232797161205::1721948125::0::1::::<><>::res://enemy/enemy.gd<>uid://bk07rn7tlf45i::::res://assets/enemy/enemy_colors.png
 enemy_movement.gd::GDScript::-1::1721917717::0::1::::enemy_movement<>CharacterBody2D<>::
-::res://hud/::1721936628
-hud.tscn::PackedScene::6451447093758272967::1721936627::0::1::::<><>::uid://cyisccgijovsw::::res://assets/bone/bone_simple1.png<>uid://col1flabmvya3::::res://assets/clock/row-1-column-1.png<>uid://714bsuajxou1::::res://assets/clock/row-1-column-2.png<>uid://donraqfxikkuh::::res://assets/clock/row-1-column-3.png<>uid://oex1npis2wug::::res://assets/clock/row-1-column-4.png<>uid://brfgwfarqx3py::::res://assets/clock/row-1-column-5.png<>uid://dinq46vouh7ht::::res://assets/clock/row-1-column-6.png<>uid://dtfqrhwdcrpw1::::res://assets/clock/row-1-column-7.png<>uid://bm6cv4dj7y4j0::::res://assets/clock/row-1-column-8.png
-::res://items/::1721936627
+::res://hud/::1721948126
+hud.tscn::PackedScene::6451447093758272967::1721948126::0::1::::<><>::uid://cyisccgijovsw::::res://assets/bone/bone_simple1.png<>uid://col1flabmvya3::::res://assets/clock/row-1-column-1.png<>uid://714bsuajxou1::::res://assets/clock/row-1-column-2.png<>uid://donraqfxikkuh::::res://assets/clock/row-1-column-3.png<>uid://oex1npis2wug::::res://assets/clock/row-1-column-4.png<>uid://brfgwfarqx3py::::res://assets/clock/row-1-column-5.png<>uid://dinq46vouh7ht::::res://assets/clock/row-1-column-6.png<>uid://dtfqrhwdcrpw1::::res://assets/clock/row-1-column-7.png<>uid://bm6cv4dj7y4j0::::res://assets/clock/row-1-column-8.png
+::res://items/::1721948125
 bone.gd::GDScript::-1::1721916689::0::1::::<>Area2D<>::
-bone.tscn::PackedScene::3874392316673068443::1721936627::0::1::::<><>::uid://6d4a72bbort5::::res://assets/bone/bone.png<>res://items/bone.gd
-::res://level/::1721936933
-end_scene.tscn::PackedScene::3553945729230831180::1721936933::0::1::::<><>::res://level/end_scene.gd<>uid://bi7rlcng1c4nv::::res://assets/tilemap/water/water_animated.png<>uid://tjcak563spi2::::res://assets/end_scene/4.png<>uid://c1tal3syawnra::::res://assets/buttons/botao_again_blue.png<>uid://dwpwl5g8abca7::::res://assets/buttons/botao_again_hover_blue.png
-game_level.gd::GDScript::-1::1721920043::0::1::::<>Node2D<>::
-game_level.tscn::PackedScene::823007552526679243::1721936627::0::1::::<><>::res://level/game_level.gd<>uid://6su7471wdxtk::::res://player/dog_player.tscn<>uid://d7bohyfu6t7q::::res://assets/tilemap/Grass.png<>uid://de3flxd85q23a::::res://assets/tilemap/Water.png<>uid://1flf5ls2ugef::::res://enemy/enemy.tscn<>uid://ct1i7ehyt2hhu::::res://assets/tilemap/animated_water.tres<>uid://bi7rlcng1c4nv::::res://assets/tilemap/water/water_animated.png<>uid://bvg1w706cppe6::::res://items/bone.tscn<>uid://cx6enkcpsyd48::::res://hud/hud.tscn
+bone.tscn::PackedScene::3874392316673068443::1721948125::0::1::::<><>::uid://6d4a72bbort5::::res://assets/bone/bone.png<>res://items/bone.gd
+::res://level/::1724356686
+end_scene.gd::GDScript::-1::1721945757::0::1::::<>Control<>::
+end_scene.tscn::PackedScene::3553945729230831180::1724356686::0::1::::<><>::res://level/end_scene.gd<>uid://bi7rlcng1c4nv::::res://assets/tilemap/water/water_animated.png<>uid://tjcak563spi2::::res://assets/end_scene/4.png<>res://assets/buttons/botao_again_blue.png<>res://assets/buttons/botao_again_hover_blue.png
+game_level.gd::GDScript::-1::1724356686::0::1::::<>Node2D<>::
+game_level.tscn::PackedScene::823007552526679243::1724356686::0::1::::<><>::res://level/game_level.gd<>uid://6su7471wdxtk::::res://player/dog_player.tscn<>uid://d7bohyfu6t7q::::res://assets/tilemap/Grass.png<>uid://de3flxd85q23a::::res://assets/tilemap/Water.png<>uid://1flf5ls2ugef::::res://enemy/enemy.tscn<>uid://ct1i7ehyt2hhu::::res://assets/tilemap/animated_water.tres<>uid://bi7rlcng1c4nv::::res://assets/tilemap/water/water_animated.png<>uid://bvg1w706cppe6::::res://items/bone.tscn<>uid://cx6enkcpsyd48::::res://hud/hud.tscn<>uid://buwgjv6smvs78::::res://objects/obstaculo.tscn
 opening_scene.gd::GDScript::-1::1721916689::0::1::::<>Control<>::
-opening_scene.tscn::PackedScene::8123645169317612854::1721936627::0::1::::<><>::res://level/opening_scene.gd<>uid://c6y0mq5ks2ggf::::res://assets/buttons/botao.png<>uid://dfm03ax0sdxgr::::res://assets/buttons/botao_hover.png<>uid://bi7rlcng1c4nv::::res://assets/tilemap/water/water_animated.png<>uid://branss2btembu::::res://assets/opening_scene/1.png
-end_scene.gd::GDScript::-1::1721920043::0::1::::<>Control<>::
-::res://objects/::1721936628
-obstaculo.gd::GDScript::-1::1721916689::0::1::::<>Area2D<>::
-obstaculo.tscn::PackedScene::3835995392858817553::1721936628::0::1::::<><>::res://objects/obstaculo.gd<>uid://cc0if2qkl3svg::::res://assets/tilemap/TX Props.png
-::res://player/::1721936627
-dog_player.gd::GDScript::-1::1721916817::0::1::::<>CharacterBody2D<>::
-dog_player.tscn::PackedScene::2214286011434126884::1721936627::0::1::::<><>::res://player/dog_player.gd<>uid://c8yhkj0dmatxd::::res://assets/dog/cachorro-sentado-sheet-completo.png
+opening_scene.tscn::PackedScene::8123645169317612854::1721948125::0::1::::<><>::res://level/opening_scene.gd<>uid://c6y0mq5ks2ggf::::res://assets/buttons/botao.png<>uid://dfm03ax0sdxgr::::res://assets/buttons/botao_hover.png<>uid://bi7rlcng1c4nv::::res://assets/tilemap/water/water_animated.png<>uid://branss2btembu::::res://assets/opening_scene/1.png
+::res://objects/::1724356686
+obstaculo.gd::GDScript::-1::1724356686::0::1::::<>Area2D<>::
+obstaculo.tscn::PackedScene::3835995392858817553::1724356686::0::1::::<><>::res://objects/obstaculo.gd<>uid://cc0if2qkl3svg::::res://assets/tilemap/TX Props.png
+::res://player/::1724356686
+dog_player.gd::GDScript::-1::1724356686::0::1::::<>CharacterBody2D<>::
+dog_player.tscn::PackedScene::2214286011434126884::1721948125::0::1::::<><>::res://player/dog_player.gd<>uid://c8yhkj0dmatxd::::res://assets/dog/cachorro-sentado-sheet-completo.png

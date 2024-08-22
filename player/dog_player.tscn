@@ -465,3 +465,9 @@ scale = Vector2(1.18912, 0.656632)
 target_position = Vector2(2.40458e-07, 8.90485)
 collision_mask = 23
 collide_with_areas = true
+
+[node name="RayCast2D2" type="RayCast2D" parent="."]
+scale = Vector2(1.41401, 0.431166)
+target_position = Vector2(0, 25.5122)
+collision_mask = 23
+collide_with_areas = true

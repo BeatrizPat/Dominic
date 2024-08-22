@@ -3,8 +3,8 @@
 [ext_resource type="Script" path="res://level/end_scene.gd" id="1_al3kg"]
 [ext_resource type="Texture2D" uid="uid://bi7rlcng1c4nv" path="res://assets/tilemap/water/water_animated.png" id="1_yr8x7"]
 [ext_resource type="Texture2D" uid="uid://tjcak563spi2" path="res://assets/end_scene/4.png" id="2_6gar6"]
-[ext_resource type="Texture2D" path="res://assets/buttons/botao_again_blue.png" id="4_gp4mg"]
-[ext_resource type="Texture2D" path="res://assets/buttons/botao_again_hover_blue.png" id="5_cguvy"]
+[ext_resource type="Texture2D" uid="uid://c1tal3syawnra" path="res://assets/buttons/botao_again_blue.png" id="4_gp4mg"]
+[ext_resource type="Texture2D" uid="uid://dwpwl5g8abca7" path="res://assets/buttons/botao_again_hover_blue.png" id="5_cguvy"]
 
 [sub_resource type="TileSet" id="TileSet_y4f2r"]
 

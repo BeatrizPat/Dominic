@@ -6,6 +6,8 @@ extends CharacterBody2D
 @onready var animation_player = $AnimationPlayer
 @onready var state_machine = animation_tree.get("parameters/playback")
 @onready var ray = $RayCast2D
+@onready var ray_object = $RayCast2D2
+var ray_object_lenght = 19
 
 var inputs = {"right": Vector2.RIGHT,
 			"left": Vector2.LEFT,
@@ -50,6 +52,7 @@ func _unhandled_input(event):
 # Função de movimentação do player
 func move(dir):
 	ray.target_position = inputs[dir] * tile_size
+	ray_object.target_position = inputs[dir] * ray_object_lenght
 	ray.force_raycast_update()
 	update_animation_parameters(ray.target_position)
 	if !ray.is_colliding():
@@ -60,7 +63,7 @@ func move(dir):
 		await tween.finished
 		moving = false
 		#Condição de game over se o player colidiu com o enemy
-	if ray.is_colliding(): 
+	else:
 		var regex = RegEx.new()
 		regex.compile("Enemy")
 		var result1 = regex.search(ray.get_collider().name)
@@ -88,11 +91,6 @@ func game_over():
 	else: 
 		animation_name = "over_down"
 	state_machine.travel(animation_name)
-	print(current_direction)
-	print(animation_name)
-	print(state_machine.get_current_node())
-	#animation_player.play(animation_name)
-	#animation_tree.set("parameters/game over/blend_position", current_direction)
 	await 500
 	
 func animation_game_over_finished():
@@ -100,12 +98,17 @@ func animation_game_over_finished():
 	get_tree().call_group("global", "game_over_scene")
 	
 func obstacles():
-	if !ray.is_colliding():
+	ray_object.force_raycast_update()
+	if !ray_object.is_colliding() or (!ray.is_colliding() and check_collider_istile(current_direction)):
+		print('dog instantiate obstacle')
 		get_tree().call_group("enter", "instantiate_obstacle", self.global_position + (current_direction * tile_size), current_direction)
-	elif ray.is_colliding():
-		var regex = RegEx.new()
-		regex.compile("obstaculo")
-		var result = regex.search(ray.get_collider().name)
-		if result:
-			get_tree().call_group("enter", "free_obstacle", ray.get_collider())
+	elif ray_object.is_colliding():
+		if (ray_object.get_collider().name).contains('obstaculo'):
+			print('dog free obstacle')
+			get_tree().call_group("enter", "free_obstacle", ray_object.get_collider(), current_direction)
 		
+func check_collider_istile(direction):
+	if ray_object.is_colliding():
+		if ray_object.get_collider().name.contains('Tile'):
+			return true
+	else: return false

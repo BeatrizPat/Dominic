@@ -45,11 +45,11 @@ func game_over_scene():
 func instantiate_obstacle(position, direction):
 	var obstaculo_instance =  instance_obj(position, direction)
 	while(1):
-		if position[0] > 55 and position[0] < 233:
-			if position[1] > 47 and position[1] < 241:
-				if(obstaculo_instance.verificar_ray()):
-					position = position + (direction *tile_size)
-					obstaculo_instance = instance_obj(position, direction)
+		if !obstaculo_instance.check_collider_istile(direction):
+			if(!obstaculo_instance.verificar_ray(direction)):
+				print('game instantiate object')
+				position = position + (direction * tile_size)
+				obstaculo_instance = instance_obj(position, direction)
 			else: break
 		else:break
 
@@ -58,13 +58,21 @@ func instance_obj(position, direction):
 	add_child(obstaculo_instance)
 	obstaculo_instance.name = 'obstaculo'
 	obstaculo_instance.global_position = position
+	obstaculo_instance.alter_ray(direction)
 	return obstaculo_instance
 	
-func free_obstacle(object):
-	object.queue_free()
+func free_obstacle(object, direction):
+	if object:
+		if(object.name.contains('obstaculo')):
+			var next_object = object.get_collider_object(direction)
+			print(next_object)
+			object.queue_free()
+			free_obstacle(next_object, direction)
+		else: return
+	return
 
 func play_again():
-	print("play again")#get_tree().change_scene_to_file("res://level/game_level.tscn")
+	print("play again")
 	
 func check_game_score():
 	if score == items_count:
