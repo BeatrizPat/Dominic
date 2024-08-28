@@ -65,8 +65,7 @@ func free_obstacle(object, direction):
 	if object:
 		if(object.name.contains('obstaculo')):
 			var next_object = object.get_collider_object(direction)
-			print(next_object)
-			object.queue_free()
+			object.animation_free()
 			free_obstacle(next_object, direction)
 		else: return
 	return

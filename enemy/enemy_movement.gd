@@ -31,7 +31,6 @@ func _physics_process(delta):
 			var regex = RegEx.new()
 			regex.compile("DogPlayer")
 			var result = regex.search(ray.get_collider().name)
-			print(ray.get_collider().name)
 			if result: 
 				ray.get_collider().game_over()
 				game_over()
@@ -49,7 +48,6 @@ func check_stuck():
 		ray_aux.target_position = dir[3] * tile_size
 		ray_aux.force_raycast_update()
 		if ray_aux.is_colliding():
-			print('stuckkkkkkk')
 			return true
 		else: false
 	else: false

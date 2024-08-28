@@ -36,19 +36,20 @@ animations = [{
 size = Vector2(11, 6)
 
 [node name="bone" type="Area2D"]
+z_index = 2
 collision_layer = 8
 collision_mask = 2
 script = ExtResource("1_h17jb")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." groups=["global"]]
-position = Vector2(9, 6.90179)
+position = Vector2(8, 8)
 scale = Vector2(0.0264286, 0.0278924)
 sprite_frames = SubResource("SpriteFrames_jl2nv")
 animation = &"idle"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(8.5, 7)
+position = Vector2(8, 8)
 shape = SubResource("RectangleShape2D_ew628")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

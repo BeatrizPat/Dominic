@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://lyw2xfihrk8j"]
+[gd_scene load_steps=19 format=3 uid="uid://lyw2xfihrk8j"]
 
 [ext_resource type="Script" path="res://level/game_level.gd" id="1_nl7ns"]
 [ext_resource type="PackedScene" uid="uid://6su7471wdxtk" path="res://player/dog_player.tscn" id="1_s4lu3"]
@@ -7,8 +7,10 @@
 [ext_resource type="PackedScene" uid="uid://1flf5ls2ugef" path="res://enemy/enemy.tscn" id="4_5vfro"]
 [ext_resource type="Texture2D" uid="uid://ct1i7ehyt2hhu" path="res://assets/tilemap/animated_water.tres" id="4_eyx1p"]
 [ext_resource type="Texture2D" uid="uid://bi7rlcng1c4nv" path="res://assets/tilemap/water/water_animated.png" id="5_8ulfn"]
+[ext_resource type="Texture2D" uid="uid://d37l7wipysrxn" path="res://assets/tilemap/grama e osso/tile_grama_osso.tres" id="7_86s0s"]
 [ext_resource type="PackedScene" uid="uid://bvg1w706cppe6" path="res://items/bone.tscn" id="7_v6jh5"]
 [ext_resource type="PackedScene" uid="uid://cx6enkcpsyd48" path="res://hud/hud.tscn" id="9_hwe6f"]
+[ext_resource type="PackedScene" uid="uid://buwgjv6smvs78" path="res://objects/obstaculo.tscn" id="10_x8asn"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_j3t1u"]
 vertices = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
@@ -22,15 +24,15 @@ texture = ExtResource("2_uyyd5")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 0, 0, 0, 0, 8, -8, 8)
 1:0/0 = 0
 1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 1:0/0/physics_layer_0/angular_velocity = 0.0
-1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 0, -8, 0)
 2:0/0 = 0
 2:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 2:0/0/physics_layer_0/angular_velocity = 0.0
-2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, 0, 8, 0, 0, -8, 0)
 3:0/0 = 0
 3:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 3:0/0/physics_layer_0/angular_velocity = 0.0
@@ -55,7 +57,7 @@ texture = ExtResource("2_uyyd5")
 0:1/0 = 0
 0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:1/0/physics_layer_0/angular_velocity = 0.0
-0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 0, -8, 0, 8, -8, 8)
 1:1/next_alternative_id = 2
 1:1/0 = 0
 1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
@@ -67,7 +69,7 @@ texture = ExtResource("2_uyyd5")
 2:1/0 = 0
 2:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 2:1/0/physics_layer_0/angular_velocity = 0.0
-2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -8, 8, -8, 8, 8, 0, 8)
 3:1/0 = 0
 3:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 3:1/0/physics_layer_0/angular_velocity = 0.0
@@ -77,11 +79,11 @@ texture = ExtResource("2_uyyd5")
 5:1/0 = 0
 5:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 5:1/0/physics_layer_0/angular_velocity = 0.0
-5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, 0, 8, 0, 8, 8, 0, 8)
 6:1/0 = 0
 6:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 6:1/0/physics_layer_0/angular_velocity = 0.0
-6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 0, 0, 0, 0, 8, -8, 8)
 7:1/0 = 0
 7:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 7:1/0/physics_layer_0/angular_velocity = 0.0
@@ -94,15 +96,15 @@ texture = ExtResource("2_uyyd5")
 0:2/0 = 0
 0:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:2/0/physics_layer_0/angular_velocity = 0.0
-0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 0, -8, 0, 0, 8, 0, 8, 8, -8, 8)
 1:2/0 = 0
 1:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 1:2/0/physics_layer_0/angular_velocity = 0.0
-1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 0, 8, 0, 8, 8, -8, 8)
 2:2/0 = 0
 2:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 2:2/0/physics_layer_0/angular_velocity = 0.0
-2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, 0, 0, -8, 8, -8, 8, 8, -8, 8, -8, 0)
 3:2/0 = 0
 3:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 3:2/0/physics_layer_0/angular_velocity = 0.0
@@ -112,11 +114,11 @@ texture = ExtResource("2_uyyd5")
 5:2/0 = 0
 5:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 5:2/0/physics_layer_0/angular_velocity = 0.0
-5:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, -8, 8, -8, 8, 0, 0, 0)
 6:2/0 = 0
 6:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 6:2/0/physics_layer_0/angular_velocity = 0.0
-6:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+6:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 0, -8, 0, 0, -8, 0)
 7:2/0 = 0
 7:2/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 7:2/0/physics_layer_0/angular_velocity = 0.0
@@ -281,6 +283,21 @@ texture = ExtResource("5_8ulfn")
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wwk7c"]
+texture = ExtResource("7_86s0s")
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+1:0/0 = 0
+1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:0/0/physics_layer_0/angular_velocity = 0.0
+0:1/0 = 0
+0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:1/0/physics_layer_0/angular_velocity = 0.0
+1:1/0 = 0
+1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:1/0/physics_layer_0/angular_velocity = 0.0
+
 [sub_resource type="TileSet" id="TileSet_hlxlb"]
 physics_layer_0/collision_layer = 1
 physics_layer_0/collision_mask = 6
@@ -289,13 +306,14 @@ sources/0 = SubResource("TileSetAtlasSource_6i48j")
 sources/1 = SubResource("TileSetAtlasSource_aplkd")
 sources/2 = SubResource("TileSetAtlasSource_q3nck")
 sources/4 = SubResource("TileSetAtlasSource_2rkwm")
+sources/5 = SubResource("TileSetAtlasSource_wwk7c")
 
 [node name="GameLevel" type="Node2D"]
 script = ExtResource("1_nl7ns")
 
 [node name="DogPlayer" parent="." instance=ExtResource("1_s4lu3")]
 z_index = 2
-position = Vector2(56, 64)
+position = Vector2(64, 56)
 starting_direction = Vector2(0, 1)
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -314,7 +332,13 @@ z_index = 1
 position = Vector2(0, 8)
 
 [node name="Enemy 1" parent="enemies" instance=ExtResource("4_5vfro")]
-position = Vector2(56, 225)
+position = Vector2(48, 216)
+
+[node name="enemy" parent="enemies" instance=ExtResource("4_5vfro")]
+position = Vector2(80, 32)
+
+[node name="enemy2" parent="enemies" instance=ExtResource("4_5vfro")]
+position = Vector2(200, 104)
 
 [node name="items" type="Node2D" parent="."]
 position = Vector2(0, 8)
@@ -323,13 +347,13 @@ position = Vector2(0, 8)
 position = Vector2(96, 32)
 
 [node name="bone2" parent="items" instance=ExtResource("7_v6jh5")]
-position = Vector2(48, 64)
+position = Vector2(40, 56)
 
 [node name="bone3" parent="items" instance=ExtResource("7_v6jh5")]
-position = Vector2(48, 80)
+position = Vector2(40, 72)
 
 [node name="bone4" parent="items" instance=ExtResource("7_v6jh5")]
-position = Vector2(48, 96)
+position = Vector2(40, 88)
 
 [node name="bone5" parent="items" instance=ExtResource("7_v6jh5")]
 position = Vector2(112, 32)
@@ -338,7 +362,37 @@ position = Vector2(112, 32)
 position = Vector2(128, 32)
 
 [node name="bone7" parent="items" instance=ExtResource("7_v6jh5")]
-position = Vector2(192, 64)
+position = Vector2(152, 168)
+
+[node name="bone8" parent="items" instance=ExtResource("7_v6jh5")]
+position = Vector2(40, 168)
+
+[node name="bone9" parent="items" instance=ExtResource("7_v6jh5")]
+position = Vector2(40, 152)
+
+[node name="bone10" parent="items" instance=ExtResource("7_v6jh5")]
+position = Vector2(136, 168)
+
+[node name="bone11" parent="items" instance=ExtResource("7_v6jh5")]
+position = Vector2(120, 168)
+
+[node name="bone12" parent="items" instance=ExtResource("7_v6jh5")]
+position = Vector2(104, 168)
+
+[node name="bone13" parent="items" instance=ExtResource("7_v6jh5")]
+position = Vector2(88, 168)
+
+[node name="bone14" parent="items" instance=ExtResource("7_v6jh5")]
+position = Vector2(56, 232)
+
+[node name="bone15" parent="items" instance=ExtResource("7_v6jh5")]
+position = Vector2(40, 104)
+
+[node name="bone16" parent="items" instance=ExtResource("7_v6jh5")]
+position = Vector2(40, 120)
+
+[node name="bone17" parent="items" instance=ExtResource("7_v6jh5")]
+position = Vector2(40, 136)
 
 [node name="Control" parent="." instance=ExtResource("9_hwe6f")]
 offset_left = 200.0
@@ -379,6 +433,12 @@ offset_bottom = 21.0
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 120.0
+
+[node name="obstaculos" type="Node2D" parent="."]
+position = Vector2(96, 200)
+
+[node name="obstaculo" parent="obstaculos" instance=ExtResource("10_x8asn")]
+position = Vector2(-24, 0)
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 

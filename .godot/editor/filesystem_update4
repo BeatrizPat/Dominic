@@ -1,13 +1,12 @@
-res://level/opening_scene.tscn
 res://level/game_level.tscn
+res://level/opening_scene.tscn
 res://player/dog_player.tscn
 res://enemy/enemy.tscn
 res://level/end_scene.tscn
 res://items/bone.tscn
 res://hud/hud.tscn
 res://objects/obstaculo.tscn
-res://level/game_level.gd
 res://objects/obstaculo.gd
-res://player/dog_player.gd
+res://assets/tilemap/grama e osso/tile_grama_osso.tres
 res://enemy/enemy_movement.gd
-res://enemy/enemy.gd
+res://level/game_level.gd

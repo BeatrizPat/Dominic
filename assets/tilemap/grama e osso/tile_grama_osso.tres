@@ -1,0 +1,26 @@
+[gd_resource type="AnimatedTexture" load_steps=8 format=3 uid="uid://d37l7wipysrxn"]
+
+[ext_resource type="Texture2D" uid="uid://7nc75n0j8hbf" path="res://assets/tilemap/grama e osso/grama e osso_1.png" id="1_5t865"]
+[ext_resource type="Texture2D" uid="uid://bgvylxg1rll0h" path="res://assets/tilemap/grama e osso/grama e osso_2.png" id="2_5lj6n"]
+[ext_resource type="Texture2D" uid="uid://16uvojbxu7ap" path="res://assets/tilemap/grama e osso/grama e osso_3.png" id="3_m7vhe"]
+[ext_resource type="Texture2D" uid="uid://co2pei2yes5ui" path="res://assets/tilemap/grama e osso/grama e osso_4.png" id="4_nrdwp"]
+[ext_resource type="Texture2D" uid="uid://bwfual6e3s33m" path="res://assets/tilemap/grama e osso/grama e osso_5.png" id="5_xf1fv"]
+[ext_resource type="Texture2D" uid="uid://cwu5mujg07m0j" path="res://assets/tilemap/grama e osso/grama e osso_6.png" id="6_7o2d2"]
+[ext_resource type="Texture2D" uid="uid://ugu3l2b0txis" path="res://assets/tilemap/grama e osso/grama e osso_7.png" id="7_8bb87"]
+
+[resource]
+frames = 7
+speed_scale = 5.7
+frame_0/texture = ExtResource("1_5t865")
+frame_1/texture = ExtResource("2_5lj6n")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("3_m7vhe")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("4_nrdwp")
+frame_3/duration = 1.0
+frame_4/texture = ExtResource("5_xf1fv")
+frame_4/duration = 1.0
+frame_5/texture = ExtResource("6_7o2d2")
+frame_5/duration = 1.0
+frame_6/texture = ExtResource("7_8bb87")
+frame_6/duration = 1.0

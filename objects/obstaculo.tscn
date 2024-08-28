@@ -1,20 +1,121 @@
-[gd_scene load_steps=6 format=3 uid="uid://buwgjv6smvs78"]
+[gd_scene load_steps=19 format=3 uid="uid://buwgjv6smvs78"]
 
 [ext_resource type="Script" path="res://objects/obstaculo.gd" id="1_cycj1"]
-[ext_resource type="Texture2D" uid="uid://cc0if2qkl3svg" path="res://assets/tilemap/TX Props.png" id="1_x50lg"]
+[ext_resource type="Texture2D" uid="uid://b4skkoiy36ert" path="res://assets/tilemap/grama e osso/grama.png" id="2_bc0jw"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_m45qh"]
-atlas = ExtResource("1_x50lg")
-region = Rect2(128, 480, 32, 32)
+[sub_resource type="AtlasTexture" id="AtlasTexture_q177o"]
+atlas = ExtResource("2_bc0jw")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a5ffh"]
+atlas = ExtResource("2_bc0jw")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yuhkl"]
+atlas = ExtResource("2_bc0jw")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n3ina"]
+atlas = ExtResource("2_bc0jw")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vdqrc"]
+atlas = ExtResource("2_bc0jw")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n1yee"]
+atlas = ExtResource("2_bc0jw")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mi5xc"]
+atlas = ExtResource("2_bc0jw")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rhs3r"]
+atlas = ExtResource("2_bc0jw")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uuqhd"]
+atlas = ExtResource("2_bc0jw")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6aubu"]
+atlas = ExtResource("2_bc0jw")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g51iv"]
+atlas = ExtResource("2_bc0jw")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2qs1r"]
+atlas = ExtResource("2_bc0jw")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_klqn6"]
+atlas = ExtResource("2_bc0jw")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vixr5"]
+atlas = ExtResource("2_bc0jw")
+region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ke14v"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_m45qh")
+"texture": SubResource("AtlasTexture_q177o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a5ffh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yuhkl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n3ina")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vdqrc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n1yee")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mi5xc")
+}],
+"loop": false,
+"name": &"grama_morrendo",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rhs3r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uuqhd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6aubu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g51iv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2qs1r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_klqn6")
+}],
+"loop": false,
+"name": &"grama_nascendo",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vixr5")
 }],
 "loop": true,
-"name": &"default",
+"name": &"grama_parada",
 "speed": 5.0
 }]
 
@@ -29,6 +130,9 @@ script = ExtResource("1_cycj1")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.479607, 0.471431)
 sprite_frames = SubResource("SpriteFrames_ke14v")
+animation = &"grama_morrendo"
+autoplay = "grama_morrendo"
+speed_scale = 1.2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_hbd20")
@@ -41,3 +145,5 @@ collision_mask = 5
 target_position = Vector2(0, 24)
 collision_mask = 21
 collide_with_areas = true
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="animation_finished"]
