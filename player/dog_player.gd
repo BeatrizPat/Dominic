@@ -33,13 +33,12 @@ func _ready():
 	#position += Vector2.ONE * tile_size/2
 	
 func _process(delta):
-	if (not moving) and not game_over_flag: state_machine.travel("idle")
+	#if (not moving) and not game_over_flag: state_machine.travel("idle")
 	
-	#print(state_machine.get_current_node())
-
+	print(state_machine.get_current_node())
+	
 # Recebe os eventos de teclado
 func _unhandled_input(event):
-	
 	if moving or game_over_flag:
 		return
 	for dir in inputs.keys():
@@ -48,6 +47,7 @@ func _unhandled_input(event):
 			current_direction = inputs[dir]
 			current_direction_name = dir
 	if event.is_action_pressed('space'): obstacles()
+	update_animation_parameters(event)
 		
 # Função de movimentação do player
 func move(dir):
@@ -79,6 +79,9 @@ func update_animation_parameters(move_input: Vector2):
 	if(move_input != Vector2.ZERO):
 		animation_tree.set("parameters/idle/blend_position", move_input)
 		animation_tree.set("parameters/walk/blend_position", move_input)
+		animation_tree.set("parameters/space/blend_position", move_input)
+		animation_tree.set("parameters/over/blend_position", move_input)
+	else: state_machine.travel("idle")
 
 #Função para animação de game over e encerra o jogo
 func game_over():
@@ -90,7 +93,7 @@ func game_over():
 		animation_name = "over_" + current_direction_name
 	else: 
 		animation_name = "over_down"
-	state_machine.travel(animation_name)
+	state_machine.travel('over')
 	await 500
 	
 func animation_game_over_finished():
@@ -101,6 +104,7 @@ func obstacles():
 	ray_object.force_raycast_update()
 	if !ray_object.is_colliding() or (!ray.is_colliding() and check_collider_istile(current_direction)):
 		print('dog instantiate obstacle')
+		state_machine.travel("space")
 		get_tree().call_group("enter", "instantiate_obstacle", self.global_position + (current_direction * tile_size), current_direction)
 	elif ray_object.is_colliding():
 		if (ray_object.get_collider().name).contains('obstaculo'):

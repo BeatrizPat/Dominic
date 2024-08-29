@@ -10,3 +10,4 @@ res://objects/obstaculo.gd
 res://assets/tilemap/grama e osso/tile_grama_osso.tres
 res://enemy/enemy_movement.gd
 res://level/game_level.gd
+res://player/dog_player.gd
