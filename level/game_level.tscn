@@ -331,11 +331,11 @@ layer_1/tile_data = PackedInt32Array(0, 0, 0, 65536, 0, 1, 131072, 0, 1, 1, 6553
 z_index = 1
 position = Vector2(0, 8)
 
-[node name="Enemy 1" parent="enemies" instance=ExtResource("4_5vfro")]
-position = Vector2(48, 216)
+[node name="enemy 1" parent="enemies" instance=ExtResource("4_5vfro")]
+position = Vector2(64, 200)
 
 [node name="enemy" parent="enemies" instance=ExtResource("4_5vfro")]
-position = Vector2(80, 32)
+position = Vector2(96, 33)
 
 [node name="enemy2" parent="enemies" instance=ExtResource("4_5vfro")]
 position = Vector2(200, 104)
@@ -344,7 +344,7 @@ position = Vector2(200, 104)
 position = Vector2(0, 8)
 
 [node name="bone" parent="items" instance=ExtResource("7_v6jh5")]
-position = Vector2(96, 32)
+position = Vector2(104, 24)
 
 [node name="bone2" parent="items" instance=ExtResource("7_v6jh5")]
 position = Vector2(40, 56)
@@ -356,10 +356,10 @@ position = Vector2(40, 72)
 position = Vector2(40, 88)
 
 [node name="bone5" parent="items" instance=ExtResource("7_v6jh5")]
-position = Vector2(112, 32)
+position = Vector2(120, 24)
 
 [node name="bone6" parent="items" instance=ExtResource("7_v6jh5")]
-position = Vector2(128, 32)
+position = Vector2(136, 24)
 
 [node name="bone7" parent="items" instance=ExtResource("7_v6jh5")]
 position = Vector2(152, 168)
@@ -438,7 +438,6 @@ wait_time = 120.0
 position = Vector2(96, 200)
 
 [node name="obstaculo" parent="obstaculos" instance=ExtResource("10_x8asn")]
-position = Vector2(-24, 0)
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 

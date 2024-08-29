@@ -1,4 +1,4 @@
-[gd_scene load_steps=50 format=3 uid="uid://6su7471wdxtk"]
+[gd_scene load_steps=51 format=3 uid="uid://6su7471wdxtk"]
 
 [ext_resource type="Script" path="res://player/dog_player.gd" id="1_nr1kn"]
 [ext_resource type="Texture2D" uid="uid://crah1cpc0tcw6" path="res://assets/dog/cachorro-sentado-sheet-completo_2.png" id="2_ulwl6"]
@@ -387,10 +387,10 @@ max_space = Vector2(1, 1.1)
 blend_mode = 1
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_qqn76"]
-animation = &"over_up"
+animation = &"over_down"
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_7f586"]
-animation = &"over_down"
+animation = &"over_up"
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_rafi0"]
 animation = &"over_right"
@@ -412,10 +412,10 @@ max_space = Vector2(1, 1.1)
 blend_mode = 1
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_0jlyb"]
-animation = &"space back"
+animation = &"space front"
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_2p0wr"]
-animation = &"space front"
+animation = &"space back"
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_qjdpd"]
 animation = &"space right"
@@ -482,6 +482,8 @@ advance_mode = 2
 switch_mode = 2
 advance_mode = 2
 
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_enwqu"]
+
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_46la2"]
 states/End/position = Vector2(610.222, 144.076)
 states/Start/position = Vector2(209.333, 143.961)
@@ -493,7 +495,7 @@ states/space/node = SubResource("AnimationNodeBlendSpace2D_8h20w")
 states/space/position = Vector2(337.507, 50.3333)
 states/walk/node = SubResource("AnimationNodeBlendSpace2D_jd33c")
 states/walk/position = Vector2(337.416, 226.141)
-transitions = ["Start", "idle", SubResource("AnimationNodeStateMachineTransition_2sann"), "idle", "walk", SubResource("AnimationNodeStateMachineTransition_x6tka"), "walk", "idle", SubResource("AnimationNodeStateMachineTransition_rnvvi"), "idle", "space", SubResource("AnimationNodeStateMachineTransition_in4sb"), "space", "idle", SubResource("AnimationNodeStateMachineTransition_17fte"), "idle", "over", SubResource("AnimationNodeStateMachineTransition_lk8l5"), "over", "End", SubResource("AnimationNodeStateMachineTransition_xt0af")]
+transitions = ["Start", "idle", SubResource("AnimationNodeStateMachineTransition_2sann"), "idle", "walk", SubResource("AnimationNodeStateMachineTransition_x6tka"), "walk", "idle", SubResource("AnimationNodeStateMachineTransition_rnvvi"), "idle", "space", SubResource("AnimationNodeStateMachineTransition_in4sb"), "space", "idle", SubResource("AnimationNodeStateMachineTransition_17fte"), "idle", "over", SubResource("AnimationNodeStateMachineTransition_lk8l5"), "over", "End", SubResource("AnimationNodeStateMachineTransition_xt0af"), "walk", "over", SubResource("AnimationNodeStateMachineTransition_enwqu")]
 graph_offset = Vector2(48, 20)
 
 [node name="DogPlayer" type="CharacterBody2D"]
@@ -523,8 +525,8 @@ libraries = {
 tree_root = SubResource("AnimationNodeStateMachine_46la2")
 anim_player = NodePath("../AnimationPlayer")
 parameters/idle/blend_position = Vector2(-0.0362538, 0.562941)
-parameters/over/blend_position = Vector2(0, 0)
-parameters/space/blend_position = Vector2(-0.0271903, -0.394706)
+parameters/over/blend_position = Vector2(-0.392749, 0.161765)
+parameters/space/blend_position = Vector2(0, -0.938235)
 parameters/walk/blend_position = Vector2(0.187311, 0.161765)
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
