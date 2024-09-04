@@ -3,12 +3,13 @@
 [ext_resource type="Texture2D" uid="uid://bi7rlcng1c4nv" path="res://assets/tilemap/water/water_animated.png" id="1_y7spc"]
 [ext_resource type="Texture2D" uid="uid://ct1i7ehyt2hhu" path="res://assets/tilemap/animated_water.tres" id="2_cuuqi"]
 [ext_resource type="Texture2D" uid="uid://ckp7gqe187v1h" path="res://assets/end_scene/GAME PLAY.png" id="2_tw3dj"]
-[ext_resource type="Script" path="res://assets/end_scene/win_scene.gd" id="3_c011x"]
+[ext_resource type="Script" path="res://level/win_scene.gd" id="3_c011x"]
 [ext_resource type="Texture2D" uid="uid://c1tal3syawnra" path="res://assets/buttons/botao_again_blue.png" id="4_u37iw"]
 [ext_resource type="Texture2D" uid="uid://dwpwl5g8abca7" path="res://assets/buttons/botao_again_hover_blue.png" id="5_wpbrk"]
 [ext_resource type="Texture2D" uid="uid://cou8i5by5vaau" path="res://assets/dog/dom_feliz_heart_1.png" id="6_6ncl5"]
 [ext_resource type="Texture2D" uid="uid://ch3doe63cuf47" path="res://assets/dog/dom_feliz_heart_2.png" id="7_1hwnl"]
 [ext_resource type="Texture2D" uid="uid://cv1ub7ui5p6xt" path="res://assets/dog/dom_feliz_heart_3.png" id="8_vhc1w"]
+
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w03xx"]
 texture = ExtResource("2_cuuqi")

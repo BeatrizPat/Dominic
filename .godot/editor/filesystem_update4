@@ -7,3 +7,9 @@ res://level/end_scene.tscn
 res://items/bone.tscn
 res://hud/hud.tscn
 res://objects/obstaculo.tscn
+res://player/dog_player.gd
+res://enemy/enemy_movement.gd
+res://GlobalVariables.gd
+res://level/game_level.gd
+res://objects/obstaculo.gd
+res://items/bone.gd

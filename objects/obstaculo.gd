@@ -21,7 +21,6 @@ func verificar_ray(direction):
 	alter_ray_object(direction)
 	ray_object.force_raycast_update()
 	if ray_object.is_colliding():
-		print(ray_object.get_collider().name)
 		return true
 	else: return false
 

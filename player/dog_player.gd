@@ -1,19 +1,19 @@
 extends CharacterBody2D
 
 @export var starting_direction : Vector2 = Vector2(0, 0.1)
-@export var tile_size : int = 16
 @onready var animation_tree = $AnimationTree
 @onready var animation_player = $AnimationPlayer
 @onready var state_machine = animation_tree.get("parameters/playback")
 @onready var ray = $RayCast2D #movement ray
 @onready var ray_object = $RayCast2D2 #obstacles ray
+var tile_size = GlobalVariables.tile_size
 var ray_object_lenght = 19
 var inputs = {"right": Vector2.RIGHT,
 			"left": Vector2.LEFT,
 			"up": Vector2.UP,
 			"down": Vector2.DOWN}
 var moving = false
-var game_over_flag = false
+var game_over_flag = GlobalVariables.game_over_flag
 var animation_speed = 2
 var current_direction
 var current_direction_name
@@ -28,11 +28,25 @@ func _ready():
 	animation_travel('idle')
 	current_direction = starting_direction
 	current_direction_name = "down"
+	print(inputs['right'])
 	
-func _process(delta):
-	pass
+func _process(_delta):
+	if(game_over_flag): animation_travel('over')
+	for dir in inputs.keys():
+		if Input.is_action_just_released(dir):
+			animation_travel('idle')
+	if Input.is_action_just_pressed('space'): 
+		animation_travel('space')
+		obstacles()
+	
+func update_animation(direction):
+	if(direction != Vector2.ZERO):
+		state_machine.travel('walk')
+	else:
+		state_machine.travel('idle')
+		
 
-# Recebe os eventos de teclado
+# Recebe unhandle events de teclado
 func _unhandled_input(event):
 	if moving or game_over_flag:
 		return
@@ -41,9 +55,6 @@ func _unhandled_input(event):
 			move(dir)
 			current_direction = inputs[dir]
 			current_direction_name = dir
-	if event.is_action_pressed('space'): 
-		animation_travel('space')
-		obstacles()
 		
 # Função de movimentação do player
 func move(dir):
@@ -59,15 +70,15 @@ func move(dir):
 		tween.tween_property(self, "position", position + inputs[dir] * tile_size, 1.0/animation_speed).set_trans(Tween.TRANS_LINEAR)
 		await tween.finished
 		moving = false
-		animation_travel('idle')
+	
 	#Condição de game over se o player colidiu com o enemy
 	else:
-		#print(ray.get_collider().name)
-		var r1 = (ray_object.get_collider().name).contains('enemy')
-		var r2 = (ray_object.get_collider().name).contains('Enemy')
-		if r1 or r2 :
-			ray.get_collider().game_over()
-			game_over()
+		if(ray_object.get_collider()):
+			var r1 = (ray_object.get_collider().name).contains('enemy')
+			var r2 = (ray_object.get_collider().name).contains('Enemy')
+			if r1 or r2 :
+				ray.get_collider().game_over()
+				game_over()
 		
 # Atualização de animação
 func update_animation_parameters(move_input: Vector2):

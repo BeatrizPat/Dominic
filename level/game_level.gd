@@ -20,6 +20,7 @@ func _ready():
 	label_timer = str(tempo_restante)
 	timer.start()
 	items_count = items.get_child_count()
+	print(items_count)
 
 func _process(delta):
 	tempo_restante = timer.get_time_left()
@@ -27,7 +28,6 @@ func _process(delta):
 	check_game_score()
 	
 func pontuacao_update():
-	print("update")
 	score += 1
 	score_label.text = str(int(score))
 	
@@ -76,5 +76,5 @@ func play_again():
 func check_game_score():
 	if score == items_count:
 		get_tree().call_group("global", "game_win")
-		get_tree().change_scene_to_file("res://assets/end_scene/win_scene.tscn")
+		get_tree().change_scene_to_file("res://level/win_scene.tscn")
 		

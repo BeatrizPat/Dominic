@@ -10,7 +10,6 @@ func _process(delta):
 	pass
 
 func _on_body_entered(body):
-	print("bone") # Replace with function body.
 	get_tree().call_group("global", "pontuacao_update")
 	queue_free()
 	#emit_signal("bone_taken")

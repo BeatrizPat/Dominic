@@ -3,7 +3,7 @@ class_name enemy_movement
 @onready var ray = $RayCast2D
 @onready var ray_aux = $RayCast2D2
 var movement = true
-@export var tile_size = 16
+var tile_size = GlobalVariables.tile_size
 var dir = [Vector2.RIGHT,
 			Vector2.LEFT,
 			Vector2.UP,
@@ -11,7 +11,6 @@ var dir = [Vector2.RIGHT,
 var current_direction = 2
 
 func _ready():
-	var rand = 0
 	add_to_group("global")
 	$AnimationPlayer.play("walk_front")
 	
@@ -23,7 +22,7 @@ func change_direction():
 		current_direction = 2
 		$AnimationPlayer.play("walk_front")
 			
-func _physics_process(delta):
+func _physics_process(_delta):
 	if movement:
 		ray.target_position = dir[current_direction] * tile_size/2
 		ray.force_raycast_update()
@@ -47,8 +46,6 @@ func check_stuck():
 		ray_aux.force_raycast_update()
 		if ray_aux.is_colliding():
 			return true
-		else: false
-	else: false
 	
 func game_over():
 	movement = false
