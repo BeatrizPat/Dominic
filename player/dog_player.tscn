@@ -209,6 +209,69 @@ tracks/1/keys = {
 }]
 }
 
+[sub_resource type="Animation" id="Animation_isto6"]
+resource_name = "space back"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(5.96046e-08, 0.28),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [4, 33]
+}
+
+[sub_resource type="Animation" id="Animation_ejcym"]
+resource_name = "space front"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [0, 32, 0]
+}
+
+[sub_resource type="Animation" id="Animation_6ysbx"]
+resource_name = "space left"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(5.96046e-08, 0.28),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [28, 29]
+}
+
+[sub_resource type="Animation" id="Animation_kjnfo"]
+resource_name = "space right"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(5.96046e-08, 0.28),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [30, 31]
+}
+
 [sub_resource type="Animation" id="Animation_f1vob"]
 resource_name = "walk_down"
 length = 0.6
@@ -275,69 +338,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [6, 7]
-}
-
-[sub_resource type="Animation" id="Animation_ejcym"]
-resource_name = "space front"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.8),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 1,
-"values": [0, 32, 0]
-}
-
-[sub_resource type="Animation" id="Animation_isto6"]
-resource_name = "space back"
-length = 0.6
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(5.96046e-08, 0.28),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [4, 33]
-}
-
-[sub_resource type="Animation" id="Animation_6ysbx"]
-resource_name = "space left"
-length = 0.6
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(5.96046e-08, 0.28),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [28, 29]
-}
-
-[sub_resource type="Animation" id="Animation_kjnfo"]
-resource_name = "space right"
-length = 0.6
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(5.96046e-08, 0.28),
-"transitions": PackedFloat32Array(1, 1),
-"update": 1,
-"values": [30, 31]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_sdsrd"]
