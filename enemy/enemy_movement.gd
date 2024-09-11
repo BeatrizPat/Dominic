@@ -9,17 +9,21 @@ var dir = [Vector2.RIGHT,
 			Vector2.UP,
 			Vector2.DOWN]
 var current_direction = 2
-
+var x=0
+var player
 func _ready():
 	add_to_group("global")
 	$AnimationPlayer.play("walk_front")
+	player = get_node("res://player/dog_player.gd")
+	print(player)
 	
 func change_direction():
-	if current_direction == 2:
-		current_direction = 3
+	
+	if current_direction == 2-x:
+		current_direction = 3-x
 		$AnimationPlayer.play("walk_back")
 	else:
-		current_direction = 2
+		current_direction = 2-x
 		$AnimationPlayer.play("walk_front")
 			
 func _physics_process(_delta):
@@ -39,10 +43,10 @@ func _physics_process(_delta):
 	else: movement = true
 	
 func check_stuck():
-	ray_aux.target_position = dir[2] * tile_size
+	ray_aux.target_position = dir[2-x] * tile_size
 	ray_aux.force_raycast_update()
 	if ray_aux.is_colliding():
-		ray_aux.target_position = dir[3] * tile_size
+		ray_aux.target_position = dir[3-x] * tile_size
 		ray_aux.force_raycast_update()
 		if ray_aux.is_colliding():
 			return true

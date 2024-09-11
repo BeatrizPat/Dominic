@@ -38,6 +38,8 @@ func _process(_delta):
 	if Input.is_action_just_pressed('space'): 
 		animation_travel('space')
 		obstacles()
+	if Input.is_action_just_pressed('win'): 
+		get_tree().call_group("global", "game_win")
 	
 func update_animation(direction):
 	if(direction != Vector2.ZERO):
@@ -73,9 +75,9 @@ func move(dir):
 	
 	#Condição de game over se o player colidiu com o enemy
 	else:
-		if(ray_object.get_collider()):
-			var r1 = (ray_object.get_collider().name).contains('enemy')
-			var r2 = (ray_object.get_collider().name).contains('Enemy')
+		if(ray.get_collider()):
+			var r1 = (ray.get_collider().name).contains('enemy')
+			var r2 = (ray.get_collider().name).contains('Enemy')
 			if r1 or r2 :
 				ray.get_collider().game_over()
 				game_over()

@@ -76,5 +76,8 @@ func play_again():
 func check_game_score():
 	if score == items_count:
 		get_tree().call_group("global", "game_win")
-		get_tree().change_scene_to_file("res://level/win_scene.tscn")
+		
+func game_win():
+	get_tree().change_scene_to_file("res://level/win_scene.tscn")
+	
 		
